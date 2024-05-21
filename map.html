@@ -1,0 +1,3174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6e6f793cf2bde1d796fb1ea9a0a5108d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6e6f793cf2bde1d796fb1ea9a0a5108d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6e6f793cf2bde1d796fb1ea9a0a5108d = L.map(
+                "map_6e6f793cf2bde1d796fb1ea9a0a5108d",
+                {
+                    center: [-36.9848, 141.6331],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a8192e071f342d5f9da53b8ebbc669a1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_a8192e071f342d5f9da53b8ebbc669a1.addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_8f0e0e7eff2c054b5155bc6d69e0fd0c = L.marker(
+                [-36.758, 145.19],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_76b5c7753157f4c00ea8cc5dcb5b4a63 = L.marker(
+                [-36.2111, 141.505],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_640848b8d9d9cf24dc70a55597dabce6 = L.marker(
+                [-37.236, 141.176],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_0fba7f8dc5050b13361deb6660a3383b = L.marker(
+                [-36.952, 144.972],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_ec34948a4ac6903aa15b212ad6b4f1ae = L.marker(
+                [-37.976, 145.649],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_58e48464fb8a66616a900757b5258b03 = L.marker(
+                [-37.8276, 142.7573],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_1b735939664842ac502ac68bd8289e65 = L.marker(
+                [-36.941, 143.268],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_7292a38a715866d51f0b13de66874966 = L.marker(
+                [-37.375, 148.054],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_691d396e99d70f686a0135f3130940a2 = L.marker(
+                [-38.527, 143.493],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_bd7d2569624d0ac1a887d453f827f384 = L.marker(
+                [-37.864, 144.174],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_bd0a16cc380c6172ef67d6fa14a55912 = L.marker(
+                [-36.538, 141.129],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_c87acea03a6bf52ed928bc63efccea17 = L.marker(
+                [-37.6, 149.325],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_8a27fe5ebcac2902dcd94ffcfe359da7 = L.marker(
+                [-37.062, 141.373],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_c698a77cf245ed4a3a9eb21adb3f1390 = L.marker(
+                [-36.834, 142.524],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_d4f7cc763f86112005b9ed3afb03019f = L.marker(
+                [-37.6008, 143.0558],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_78948fe5d2143c8198132af4217c12b6 = L.marker(
+                [-36.0714, 145.7665],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_29be660b13ca6cb828b866ff06a75779 = L.marker(
+                [-36.7801, 142.7151],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_06feab202e95eedff79cf0db317e890b = L.marker(
+                [-37.5865, 143.0246],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_a063d94a02ab3722d8484c221ca27767 = L.marker(
+                [-36.8741, 143.91],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_e7f665cac0d4df5dbdbf9bbb9759ede5 = L.marker(
+                [-37.0585, 143.8589],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_79bed74208139720f6a510b84595c2b5 = L.marker(
+                [-35.963, 141.078],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_2d5d25addae7429e1683f6ab9c38cbcf = L.marker(
+                [-37.288, 144.39],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_47f54dfb28328cd5c680a15c19c67dbb = L.marker(
+                [-37.46, 148.102],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_af5af581358821f200c8f29df5aa4881 = L.marker(
+                [-36.3756, 143.7243],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_e46cf7a21d7899c4adf7d3aa2d8ba46a = L.marker(
+                [-36.009, 143.185],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_30172efb510e32a4b09f1a47204ea825 = L.marker(
+                [-37.437, 148.104],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_8596748aa625aca373d3adc1a01d9eaa = L.marker(
+                [-37.63, 149.232],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_9175bb69d0a20c95c902e6b4b48c185b = L.marker(
+                [-37.475, 143.365],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_6c7943f14aadc239590acdf9c431c296 = L.marker(
+                [-35.954, 141.076],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_4d6a9332365026cf801300ae41ab62b5 = L.marker(
+                [-37.384, 149.336],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_0d0162b443327249174a94839709621a = L.marker(
+                [-36.1704, 144.0433],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_87f1b3e805d977361180f14de96942b3 = L.marker(
+                [-36.4274, 142.1944],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_763c614923e8b6f299287da523e42313 = L.marker(
+                [-34.5374, 141.7141],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_684e545bc6b83b3c67347147b2067d21 = L.marker(
+                [-35.0889, 141.2419],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_965724502c86687a4614b87fa4ef320d = L.marker(
+                [-37.591, 149.33],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_48d6dc2055cacb545c5ba39dc5f97cad = L.marker(
+                [-37.562, 148.05],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_59b8449e0500ffcc0c764ae947c74d84 = L.marker(
+                [-37.6593, 143.3445],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_106470b21e3f836542175f162f29c76d = L.marker(
+                [-37.471, 148.091],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_00933f7c38c84f02fc85baabb49cb4eb = L.marker(
+                [-37.606, 149.312],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_246d455ef87905c29eb9eb2b36243b58 = L.marker(
+                [-36.5794, 142.5959],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_dd5f9b0bfe1a2996fccaea0644380f9e = L.marker(
+                [-36.943, 143.286],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_9c4964a1f50eb90a1b05e8fa6dc56a7d = L.marker(
+                [-37.559, 148.037],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_cff93f59fc6c968c76aabc55465e85a6 = L.marker(
+                [-37.336, 148.073],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_1bd5cbb9fc79d214a23dd8e0bd835a66 = L.marker(
+                [-37.8387, 144.6301],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_6dec941514ce29c13082ca3e470fbbe1 = L.marker(
+                [-36.098, 143.735],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_de9f73de73967ce9c1d001154ec4fe92 = L.marker(
+                [-37.602, 149.311],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_aeb7b7f4586b2ed79a6f45256e2d83ae = L.marker(
+                [-35.889, 145.614],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_560fb0f6bfbe36ac920dfba00205957f = L.marker(
+                [-36.5243, 142.0839],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_be452e7c5469331510a3d2c2428899b4 = L.marker(
+                [-36.3782, 143.7313],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_192a3654c1a160b3506df6a9623fca0f = L.marker(
+                [-36.5871, 144.961],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_213d1e1ce3225486edf3b65c61fb08c1 = L.marker(
+                [-37.438, 148.09],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_0e5130c359bd2ecc575d9f7491c2b3f9 = L.marker(
+                [-37.293, 141.245],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_5be3ae3b91cff91e7e9c18baa86be2f7 = L.marker(
+                [-37.562, 148.05],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_2bcd11be3b881a6538773705425a061e = L.marker(
+                [-37.365, 148.052],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_2f261f72a0689de6a0c5d45ea955b6c5 = L.marker(
+                [-37.591, 149.33],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_ee7967ce4acc9832ec3219ee4a8a4914 = L.marker(
+                [-37.469, 148.125],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_56ab9fa171d6c0bbf5419ea98329bf79 = L.marker(
+                [-35.364, 141.063],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_e232942fe8729f055f90ab1fef8fde27 = L.marker(
+                [-37.436, 148.088],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_55d6d6be49d885d69947a3112e85db04 = L.marker(
+                [-36.152, 143.578],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_09066e23b47da24dd4289e68bc50df7a = L.marker(
+                [-37.363, 148.06],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_ff49356107873c1e53f6273339822fd0 = L.marker(
+                [-37.605, 149.326],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_15db34ee86dbdd3a29c547f073cc3445 = L.marker(
+                [-37.236, 141.176],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_3b9324658683df4672719a9d89fa640c = L.marker(
+                [-38.167, 143.841],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_0f6f6c161a85fa714460c1829431a3d5 = L.marker(
+                [-37.858, 143.428],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_6fce234825f7d33dc2c1a598e98694f2 = L.marker(
+                [-36.4125, 143.1189],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_dd6293650c6b7aae5d979473ecff6e89 = L.marker(
+                [-37.9072, 141.9183],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_801a9e6fe579cd72a59dab58d71bd0e1 = L.marker(
+                [-37.1875, 146.8024],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_f60772656f1896f0bd23587f49f8df35 = L.marker(
+                [-36.251, 142.5651],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_c096fafe8f34b89190527e7d83e5fb6a = L.marker(
+                [-37.608, 149.282],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_5e4df5bb6c6c0b8375f509f19ece23cf = L.marker(
+                [-36.6859, 146.8907],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_5b905d033ccb57193842a68d9243779e = L.marker(
+                [-36.942, 143.292],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_39102db2a6475483236484d18e660d56 = L.marker(
+                [-37.5865, 143.0246],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_2b64a1bb2282f51d015cabc3feb57c8a = L.marker(
+                [-36.779, 146.108],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_41b3d686d27961e67e3e317499288536 = L.marker(
+                [-36.778, 145.1635],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_012adfa5a129f5c1b612da023b2d9371 = L.marker(
+                [-37.6008, 143.0558],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_729e8b7da94d71fbe28dc194eb59d5f6 = L.marker(
+                [-35.962, 143.791],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_e8d26e6aae1293f0cfafee001713e060 = L.marker(
+                [-37.561, 148.032],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_bb4c67abf31d367f4f33a653591a3b6a = L.marker(
+                [-36.3096, 142.7722],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_70841e16dc4cb4cedf698f651e4846e0 = L.marker(
+                [-36.943, 143.286],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_c4c4d67f108a9f51530b6b7e56392bd2 = L.marker(
+                [-37.59, 149.31],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_50596d9f5abe4282a9caf626d387dd46 = L.marker(
+                [-37.559, 148.037],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_281224340f97264c7c97642eb3dbfbe7 = L.marker(
+                [-36.3823, 141.3146],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_265302d577be172a2fee621107f3e492 = L.marker(
+                [-37.6593, 143.3445],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_abe7f7fe1ba685f54ef48a743b1a413e = L.marker(
+                [-37.856, 143.416],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_5ae0145ab1edade5b88321e3bd12cb72 = L.marker(
+                [-37.61, 149.296],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_4d2cf03c47c7c9c5c2984bc3a4b75761 = L.marker(
+                [-36.4422, 141.427],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_dad75c3a7811c26a45303de84412a25e = L.marker(
+                [-36.2669, 143.1906],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_7f5a49126a674824653fdfa55f36c454 = L.marker(
+                [-37.448, 148.114],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_6cbfd5af7f77e07ad47c494c4f780e85 = L.marker(
+                [-37.247, 141.278],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_4d3e9532230124799d8550e801818d84 = L.marker(
+                [-36.851, 148.117],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_e3730ce1e0d6df50ccecdbf50acf0761 = L.marker(
+                [-37.634, 149.237],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_fee56e8b5249867878ab98bbe19dd164 = L.marker(
+                [-37.013, 141.5355],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_5dc5e745e2dd5b9b3686875389c51a94 = L.marker(
+                [-36.3674, 143.7295],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_02e31a659e7e1ca64b3296e99700b45c = L.marker(
+                [-37.6662, 142.9874],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var marker_9b41fa20b35f7b42926c134f9b5781ba = L.marker(
+                [-36.758, 145.19],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_1883a0021dc798eadd91e180b0389bb7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9b41fa20b35f7b42926c134f9b5781ba.setIcon(icon_1883a0021dc798eadd91e180b0389bb7);
+        
+    
+        var popup_2ac04c652702667dc93a5943fa4938a0 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_6d8dba50ad91972c9311e4774e45370a = $(`<div id="html_6d8dba50ad91972c9311e4774e45370a" style="width: 100.0%; height: 100.0%;">Air Temp: 20 °C, Humidity: 58.4, knots: 6.1, MaxWindSpeed 11.1, precipitation  0.00I, GHI_w/m2: 159, date: 2024-01-13</div>`)[0];
+                popup_2ac04c652702667dc93a5943fa4938a0.setContent(html_6d8dba50ad91972c9311e4774e45370a);
+            
+        
+
+        marker_9b41fa20b35f7b42926c134f9b5781ba.bindPopup(popup_2ac04c652702667dc93a5943fa4938a0)
+        ;
+
+        
+    
+    
+            var marker_2941db31e2482be4709e9816477c4912 = L.marker(
+                [-36.2111, 141.505],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_39bded22013dc638fe3d2f87f4b32546 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2941db31e2482be4709e9816477c4912.setIcon(icon_39bded22013dc638fe3d2f87f4b32546);
+        
+    
+        var popup_767841b8ca864fc1ef0e7aedf5f0d0c3 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_6a7e5d2eec88f404ad38beab57bd4749 = $(`<div id="html_6a7e5d2eec88f404ad38beab57bd4749" style="width: 100.0%; height: 100.0%;">Air Temp: 24 °C, Humidity: 55.5, knots: 7.9, MaxWindSpeed 15.0, precipitation  0.00I, GHI_w/m2: 196, date: 2024-01-21</div>`)[0];
+                popup_767841b8ca864fc1ef0e7aedf5f0d0c3.setContent(html_6a7e5d2eec88f404ad38beab57bd4749);
+            
+        
+
+        marker_2941db31e2482be4709e9816477c4912.bindPopup(popup_767841b8ca864fc1ef0e7aedf5f0d0c3)
+        ;
+
+        
+    
+    
+            var marker_c2946d446f1e976ec4205d970c9c39f7 = L.marker(
+                [-37.236, 141.176],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_dd0456d329dc56148e123a4e5d0716e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c2946d446f1e976ec4205d970c9c39f7.setIcon(icon_dd0456d329dc56148e123a4e5d0716e9);
+        
+    
+        var popup_5cca22f825ffd9e84f58e269772c42b3 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_d0689e2d10205aee3dc1d4e254a1fa62 = $(`<div id="html_d0689e2d10205aee3dc1d4e254a1fa62" style="width: 100.0%; height: 100.0%;">Air Temp: 14 °C, Humidity: 48.1, knots: 13.7, MaxWindSpeed 19.0, precipitation  0.35G, GHI_w/m2: 122, date: 2024-01-31</div>`)[0];
+                popup_5cca22f825ffd9e84f58e269772c42b3.setContent(html_d0689e2d10205aee3dc1d4e254a1fa62);
+            
+        
+
+        marker_c2946d446f1e976ec4205d970c9c39f7.bindPopup(popup_5cca22f825ffd9e84f58e269772c42b3)
+        ;
+
+        
+    
+    
+            var marker_345495f231b822c9f5b6f9a781bc0def = L.marker(
+                [-36.952, 144.972],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_b53674a0f53db2a9f31616f97c81e8e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_345495f231b822c9f5b6f9a781bc0def.setIcon(icon_b53674a0f53db2a9f31616f97c81e8e7);
+        
+    
+        var popup_26d30271404e82ee93f927f110c674cc = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_bc888454c9c67a60c1b0c3fdaa5af803 = $(`<div id="html_bc888454c9c67a60c1b0c3fdaa5af803" style="width: 100.0%; height: 100.0%;">Air Temp: 21 °C, Humidity: 57.3, knots: 5.4, MaxWindSpeed 9.9, precipitation  0.00I, GHI_w/m2: 169, date: 2024-02-10</div>`)[0];
+                popup_26d30271404e82ee93f927f110c674cc.setContent(html_bc888454c9c67a60c1b0c3fdaa5af803);
+            
+        
+
+        marker_345495f231b822c9f5b6f9a781bc0def.bindPopup(popup_26d30271404e82ee93f927f110c674cc)
+        ;
+
+        
+    
+    
+            var marker_e50a063b9dda474a873b52112d4fca18 = L.marker(
+                [-37.976, 145.649],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_ad087f1df24af687220c955ea3c92434 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e50a063b9dda474a873b52112d4fca18.setIcon(icon_ad087f1df24af687220c955ea3c92434);
+        
+    
+        var popup_42ce2d158ebc01008416b4311e7d39c2 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_209bf66098a5d0306dd46e3655d7e430 = $(`<div id="html_209bf66098a5d0306dd46e3655d7e430" style="width: 100.0%; height: 100.0%;">Air Temp: 22 °C, Humidity: 62.0, knots: 7.9, MaxWindSpeed 11.1, precipitation  0.00I, GHI_w/m2: 170, date: 2024-02-20</div>`)[0];
+                popup_42ce2d158ebc01008416b4311e7d39c2.setContent(html_209bf66098a5d0306dd46e3655d7e430);
+            
+        
+
+        marker_e50a063b9dda474a873b52112d4fca18.bindPopup(popup_42ce2d158ebc01008416b4311e7d39c2)
+        ;
+
+        
+    
+    
+            var marker_209304cfa45246b7ac177cbd70d9f043 = L.marker(
+                [-37.8276, 142.7573],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_53d4fc42f0d43d390895f7fb6ccb7fc7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_209304cfa45246b7ac177cbd70d9f043.setIcon(icon_53d4fc42f0d43d390895f7fb6ccb7fc7);
+        
+    
+        var popup_f6d065f1203a67352081a89b98bd4318 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_8955fc7850f979bef8369de07fe373d5 = $(`<div id="html_8955fc7850f979bef8369de07fe373d5" style="width: 100.0%; height: 100.0%;">Air Temp: 9 °C, Humidity: 42.1, knots: 7.6, MaxWindSpeed 12.0, precipitation  0.01G, GHI_w/m2: 82, date: 2024-03-01</div>`)[0];
+                popup_f6d065f1203a67352081a89b98bd4318.setContent(html_8955fc7850f979bef8369de07fe373d5);
+            
+        
+
+        marker_209304cfa45246b7ac177cbd70d9f043.bindPopup(popup_f6d065f1203a67352081a89b98bd4318)
+        ;
+
+        
+    
+    
+            var marker_b4796cd637bbef5e534cdf40acef59d6 = L.marker(
+                [-36.941, 143.268],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_e36e364ec170b5932ec2cb1991f1b8c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b4796cd637bbef5e534cdf40acef59d6.setIcon(icon_e36e364ec170b5932ec2cb1991f1b8c0);
+        
+    
+        var popup_b3db0d1a6defcbd7441e00a29422d8a5 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_07e1581e5cb6670ad8be1203c54c2920 = $(`<div id="html_07e1581e5cb6670ad8be1203c54c2920" style="width: 100.0%; height: 100.0%;">Air Temp: 23 °C, Humidity: 63.8, knots: 7.1, MaxWindSpeed 15.9, precipitation  0.08G, GHI_w/m2: 174, date: 2024-03-10</div>`)[0];
+                popup_b3db0d1a6defcbd7441e00a29422d8a5.setContent(html_07e1581e5cb6670ad8be1203c54c2920);
+            
+        
+
+        marker_b4796cd637bbef5e534cdf40acef59d6.bindPopup(popup_b3db0d1a6defcbd7441e00a29422d8a5)
+        ;
+
+        
+    
+    
+            var marker_e00a094c6486fe3768265e5efba99e16 = L.marker(
+                [-37.375, 148.054],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_949a66540b721acff5b20f3c83720cde = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e00a094c6486fe3768265e5efba99e16.setIcon(icon_949a66540b721acff5b20f3c83720cde);
+        
+    
+        var popup_185bb7e921bed0c27c996fa99904b722 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_0aeab4b739fbe24660c4c7f348f4f129 = $(`<div id="html_0aeab4b739fbe24660c4c7f348f4f129" style="width: 100.0%; height: 100.0%;">Air Temp: 12 °C, Humidity: 47.0, knots: 4.8, MaxWindSpeed 8.9, precipitation  0.00I, GHI_w/m2: 105, date: 2024-03-20</div>`)[0];
+                popup_185bb7e921bed0c27c996fa99904b722.setContent(html_0aeab4b739fbe24660c4c7f348f4f129);
+            
+        
+
+        marker_e00a094c6486fe3768265e5efba99e16.bindPopup(popup_185bb7e921bed0c27c996fa99904b722)
+        ;
+
+        
+    
+    
+            var marker_6b1a5bb1f18bce79fbb6bc78139136f8 = L.marker(
+                [-38.527, 143.493],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_9dbee8e15149dbc2936cf99c8f5a9868 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6b1a5bb1f18bce79fbb6bc78139136f8.setIcon(icon_9dbee8e15149dbc2936cf99c8f5a9868);
+        
+    
+        var popup_0cd5e173156770e1a80226c42c1ee951 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_9c606184b769f3a0ea7acdfa57795dd3 = $(`<div id="html_9c606184b769f3a0ea7acdfa57795dd3" style="width: 100.0%; height: 100.0%;">Air Temp: 19 °C, Humidity: 51.5, knots: 10.2, MaxWindSpeed 20.0, precipitation  0.00I, GHI_w/m2: 161, date: 2024-03-30</div>`)[0];
+                popup_0cd5e173156770e1a80226c42c1ee951.setContent(html_9c606184b769f3a0ea7acdfa57795dd3);
+            
+        
+
+        marker_6b1a5bb1f18bce79fbb6bc78139136f8.bindPopup(popup_0cd5e173156770e1a80226c42c1ee951)
+        ;
+
+        
+    
+    
+            var marker_850cee3ea0fbfab9ada74cd2d5447cc5 = L.marker(
+                [-37.864, 144.174],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_37a7c31b33111735af202d33bc90f439 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_850cee3ea0fbfab9ada74cd2d5447cc5.setIcon(icon_37a7c31b33111735af202d33bc90f439);
+        
+    
+        var popup_f432a83b401152907a969d68be0ab28f = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_4f2067cbd8d342f3b7be3f7dc1493f4e = $(`<div id="html_4f2067cbd8d342f3b7be3f7dc1493f4e" style="width: 100.0%; height: 100.0%;">Air Temp: 28 °C, Humidity: 58.4, knots: 11.9, MaxWindSpeed 18.1, precipitation  0.04G, GHI_w/m2: 223, date: 2024-04-09</div>`)[0];
+                popup_f432a83b401152907a969d68be0ab28f.setContent(html_4f2067cbd8d342f3b7be3f7dc1493f4e);
+            
+        
+
+        marker_850cee3ea0fbfab9ada74cd2d5447cc5.bindPopup(popup_f432a83b401152907a969d68be0ab28f)
+        ;
+
+        
+    
+    
+            var marker_b4e6f9d7d05da85c082607d55032fd28 = L.marker(
+                [-36.538, 141.129],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_ef93f4586d835e8666c0eb9330f026ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b4e6f9d7d05da85c082607d55032fd28.setIcon(icon_ef93f4586d835e8666c0eb9330f026ee);
+        
+    
+        var popup_9ad66d1e0f7a75428cc415516414f90f = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_91ffc7ed94a5c9ce5f00a1dfa986696e = $(`<div id="html_91ffc7ed94a5c9ce5f00a1dfa986696e" style="width: 100.0%; height: 100.0%;">Air Temp: 12 °C, Humidity: 43.4, knots: 9.3, MaxWindSpeed 15.0, precipitation  0.00I, GHI_w/m2: 109, date: 2024-04-19</div>`)[0];
+                popup_9ad66d1e0f7a75428cc415516414f90f.setContent(html_91ffc7ed94a5c9ce5f00a1dfa986696e);
+            
+        
+
+        marker_b4e6f9d7d05da85c082607d55032fd28.bindPopup(popup_9ad66d1e0f7a75428cc415516414f90f)
+        ;
+
+        
+    
+    
+            var marker_4027e5732bc4a415ba82885d77f0bc55 = L.marker(
+                [-37.6, 149.325],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_e9bf17e353cb10be0d0fdfecf4704a5a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4027e5732bc4a415ba82885d77f0bc55.setIcon(icon_e9bf17e353cb10be0d0fdfecf4704a5a);
+        
+    
+        var popup_f92665521353278541bd9500fab9148b = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_2515cc3f4c61752498f8b20cb30a566c = $(`<div id="html_2515cc3f4c61752498f8b20cb30a566c" style="width: 100.0%; height: 100.0%;">Air Temp: 16 °C, Humidity: 48.1, knots: 9.3, MaxWindSpeed 12.0, precipitation  0.00G, GHI_w/m2: 139, date: 2024-04-29</div>`)[0];
+                popup_f92665521353278541bd9500fab9148b.setContent(html_2515cc3f4c61752498f8b20cb30a566c);
+            
+        
+
+        marker_4027e5732bc4a415ba82885d77f0bc55.bindPopup(popup_f92665521353278541bd9500fab9148b)
+        ;
+
+        
+    
+    
+            var marker_18add9d1372b090957affcfeb3c328ef = L.marker(
+                [-37.062, 141.373],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_14bd847a9ee195a4a14a09e428ac4258 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_18add9d1372b090957affcfeb3c328ef.setIcon(icon_14bd847a9ee195a4a14a09e428ac4258);
+        
+    
+        var popup_ba4104615efdcd3352a9e9f325cf36a4 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_05013925edd97a5eb9816efb7b493533 = $(`<div id="html_05013925edd97a5eb9816efb7b493533" style="width: 100.0%; height: 100.0%;">Air Temp: 26 °C, Humidity: 52.2, knots: 13.7, MaxWindSpeed 16.9, precipitation  0.00I, GHI_w/m2: 219, date: 2024-05-09</div>`)[0];
+                popup_ba4104615efdcd3352a9e9f325cf36a4.setContent(html_05013925edd97a5eb9816efb7b493533);
+            
+        
+
+        marker_18add9d1372b090957affcfeb3c328ef.bindPopup(popup_ba4104615efdcd3352a9e9f325cf36a4)
+        ;
+
+        
+    
+    
+            var marker_3f18b7dbbb1c9bb917937846fb415066 = L.marker(
+                [-36.834, 142.524],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_515385e84fd90e0165a500571276882c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3f18b7dbbb1c9bb917937846fb415066.setIcon(icon_515385e84fd90e0165a500571276882c);
+        
+    
+        var popup_d9524c872ae1dc70236c8262ab3a1adf = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_b5a66813e76fd2146020d752d9af0415 = $(`<div id="html_b5a66813e76fd2146020d752d9af0415" style="width: 100.0%; height: 100.0%;">Air Temp: 13 °C, Humidity: 50.3, knots: 8.6, MaxWindSpeed 13.0, precipitation  0.02G, GHI_w/m2: 111, date: 2024-05-19</div>`)[0];
+                popup_d9524c872ae1dc70236c8262ab3a1adf.setContent(html_b5a66813e76fd2146020d752d9af0415);
+            
+        
+
+        marker_3f18b7dbbb1c9bb917937846fb415066.bindPopup(popup_d9524c872ae1dc70236c8262ab3a1adf)
+        ;
+
+        
+    
+    
+            var marker_67040264eb8ee5542279a0bd3e1c862b = L.marker(
+                [-37.6008, 143.0558],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_9c6d80c0693cf5e406f5bc289c398c4e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_67040264eb8ee5542279a0bd3e1c862b.setIcon(icon_9c6d80c0693cf5e406f5bc289c398c4e);
+        
+    
+        var popup_203255d6e6402740c8c3b0b9de3625b8 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_4743e1bbc170353cb1f5a541aaccbf48 = $(`<div id="html_4743e1bbc170353cb1f5a541aaccbf48" style="width: 100.0%; height: 100.0%;">Air Temp: 15 °C, Humidity: 44.8, knots: 8.3, MaxWindSpeed 19.0, precipitation  0.00I, GHI_w/m2: 134, date: 2024-05-29</div>`)[0];
+                popup_203255d6e6402740c8c3b0b9de3625b8.setContent(html_4743e1bbc170353cb1f5a541aaccbf48);
+            
+        
+
+        marker_67040264eb8ee5542279a0bd3e1c862b.bindPopup(popup_203255d6e6402740c8c3b0b9de3625b8)
+        ;
+
+        
+    
+    
+            var marker_f7e1e611e32e36d5d7f3a9f770abd2a8 = L.marker(
+                [-36.0714, 145.7665],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_bf72605043e540ebf52dbd440f1e2347 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f7e1e611e32e36d5d7f3a9f770abd2a8.setIcon(icon_bf72605043e540ebf52dbd440f1e2347);
+        
+    
+        var popup_0653f421a165ebb79323e633042e4f39 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_b547e786d294ed5868871266170c8ec2 = $(`<div id="html_b547e786d294ed5868871266170c8ec2" style="width: 100.0%; height: 100.0%;">Air Temp: 18 °C, Humidity: 54.6, knots: 12.0, MaxWindSpeed 25.1, precipitation  0.12G, GHI_w/m2: 148, date: 2024-06-07</div>`)[0];
+                popup_0653f421a165ebb79323e633042e4f39.setContent(html_b547e786d294ed5868871266170c8ec2);
+            
+        
+
+        marker_f7e1e611e32e36d5d7f3a9f770abd2a8.bindPopup(popup_0653f421a165ebb79323e633042e4f39)
+        ;
+
+        
+    
+    
+            var marker_579abee916a48425100c8dcec8a74bd2 = L.marker(
+                [-36.7801, 142.7151],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_c54b7da8853f4f098a8c3ae67fded979 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_579abee916a48425100c8dcec8a74bd2.setIcon(icon_c54b7da8853f4f098a8c3ae67fded979);
+        
+    
+        var popup_fc08b74f438e65c2cbb5501f00923098 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_5006204bba0ca69bbe794001e9b11c04 = $(`<div id="html_5006204bba0ca69bbe794001e9b11c04" style="width: 100.0%; height: 100.0%;">Air Temp: 16 °C, Humidity: 51.7, knots: 7.4, MaxWindSpeed 15.0, precipitation  0.00I, GHI_w/m2: 135, date: 2024-06-17</div>`)[0];
+                popup_fc08b74f438e65c2cbb5501f00923098.setContent(html_5006204bba0ca69bbe794001e9b11c04);
+            
+        
+
+        marker_579abee916a48425100c8dcec8a74bd2.bindPopup(popup_fc08b74f438e65c2cbb5501f00923098)
+        ;
+
+        
+    
+    
+            var marker_0553b17cc2b29d6b353cac521578b418 = L.marker(
+                [-37.5865, 143.0246],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_e594f1fb001b23b9ca1e585d6f875e2f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0553b17cc2b29d6b353cac521578b418.setIcon(icon_e594f1fb001b23b9ca1e585d6f875e2f);
+        
+    
+        var popup_694b650d383cf1c660e18a550925d0ec = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_7a4fb854a57c9f1a86bd9a96adb3cd42 = $(`<div id="html_7a4fb854a57c9f1a86bd9a96adb3cd42" style="width: 100.0%; height: 100.0%;">Air Temp: 17 °C, Humidity: 53.5, knots: 7.3, MaxWindSpeed 14.0, precipitation  0.00I, GHI_w/m2: 141, date: 2024-06-27</div>`)[0];
+                popup_694b650d383cf1c660e18a550925d0ec.setContent(html_7a4fb854a57c9f1a86bd9a96adb3cd42);
+            
+        
+
+        marker_0553b17cc2b29d6b353cac521578b418.bindPopup(popup_694b650d383cf1c660e18a550925d0ec)
+        ;
+
+        
+    
+    
+            var marker_bb7434f83d0f2f58f5e7fc994afbea71 = L.marker(
+                [-36.8741, 143.91],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_9953e56bbc1cffb4aaa3d5e4384e930f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bb7434f83d0f2f58f5e7fc994afbea71.setIcon(icon_9953e56bbc1cffb4aaa3d5e4384e930f);
+        
+    
+        var popup_1b1e96ebf0805e7621086bb6929f92b0 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_e8c44a1183aa02e0ba8d4ddd17484009 = $(`<div id="html_e8c44a1183aa02e0ba8d4ddd17484009" style="width: 100.0%; height: 100.0%;">Air Temp: 9 °C, Humidity: 41.9, knots: 9.2, MaxWindSpeed 14.0, precipitation  0.12G, GHI_w/m2: 82, date: 2024-07-07</div>`)[0];
+                popup_1b1e96ebf0805e7621086bb6929f92b0.setContent(html_e8c44a1183aa02e0ba8d4ddd17484009);
+            
+        
+
+        marker_bb7434f83d0f2f58f5e7fc994afbea71.bindPopup(popup_1b1e96ebf0805e7621086bb6929f92b0)
+        ;
+
+        
+    
+    
+            var marker_801b62435f3ef10756263927b3ee1e7d = L.marker(
+                [-37.0585, 143.8589],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_b9eec1b7f09e272bbebccd432c339135 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_801b62435f3ef10756263927b3ee1e7d.setIcon(icon_b9eec1b7f09e272bbebccd432c339135);
+        
+    
+        var popup_4a857537c11294cfb969d83248e0916e = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_0f280cb32b5b48bc098f2449bad77e6d = $(`<div id="html_0f280cb32b5b48bc098f2449bad77e6d" style="width: 100.0%; height: 100.0%;">Air Temp: 19 °C, Humidity: 59.7, knots: 7.4, MaxWindSpeed 14.0, precipitation  0.63G, GHI_w/m2: 150, date: 2024-07-17</div>`)[0];
+                popup_4a857537c11294cfb969d83248e0916e.setContent(html_0f280cb32b5b48bc098f2449bad77e6d);
+            
+        
+
+        marker_801b62435f3ef10756263927b3ee1e7d.bindPopup(popup_4a857537c11294cfb969d83248e0916e)
+        ;
+
+        
+    
+    
+            var marker_662eff661cb59c459643bf38184fcd71 = L.marker(
+                [-35.963, 141.078],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_5123f6de3d41c267326065baab5fc662 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_662eff661cb59c459643bf38184fcd71.setIcon(icon_5123f6de3d41c267326065baab5fc662);
+        
+    
+        var popup_ab51fae156707eb62aac4bc103b6aa56 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_9a53c6221cf3d5afcd4be55a5d11298a = $(`<div id="html_9a53c6221cf3d5afcd4be55a5d11298a" style="width: 100.0%; height: 100.0%;">Air Temp: 5 °C, Humidity: 33.1, knots: 5.8, MaxWindSpeed 14.0, precipitation  0.00I, GHI_w/m2: 49, date: 2024-07-27</div>`)[0];
+                popup_ab51fae156707eb62aac4bc103b6aa56.setContent(html_9a53c6221cf3d5afcd4be55a5d11298a);
+            
+        
+
+        marker_662eff661cb59c459643bf38184fcd71.bindPopup(popup_ab51fae156707eb62aac4bc103b6aa56)
+        ;
+
+        
+    
+    
+            var marker_b73baf2bf7482cb5751ccc8172d89d3b = L.marker(
+                [-37.288, 144.39],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_3a3b21795900c3cc504dc3978f5625bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b73baf2bf7482cb5751ccc8172d89d3b.setIcon(icon_3a3b21795900c3cc504dc3978f5625bd);
+        
+    
+        var popup_347cdfae132f213306bdac91318fda36 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_ed3ad29175f87141e5d6d48ed2be7d3e = $(`<div id="html_ed3ad29175f87141e5d6d48ed2be7d3e" style="width: 100.0%; height: 100.0%;">Air Temp: 12 °C, Humidity: 49.9, knots: 6.1, MaxWindSpeed 13.0, precipitation  0.02G, GHI_w/m2: 103, date: 2024-08-06</div>`)[0];
+                popup_347cdfae132f213306bdac91318fda36.setContent(html_ed3ad29175f87141e5d6d48ed2be7d3e);
+            
+        
+
+        marker_b73baf2bf7482cb5751ccc8172d89d3b.bindPopup(popup_347cdfae132f213306bdac91318fda36)
+        ;
+
+        
+    
+    
+            var marker_ebc20943a4a32a57cd0a006afb6826de = L.marker(
+                [-37.46, 148.102],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_5a6beaac52c2e95b4e1a477f4b8ed2b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ebc20943a4a32a57cd0a006afb6826de.setIcon(icon_5a6beaac52c2e95b4e1a477f4b8ed2b8);
+        
+    
+        var popup_dbc925cf3f7cc030695a1f7f2ab9e8a9 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_ca4f809115b0d8d735c9d2d84e8608ed = $(`<div id="html_ca4f809115b0d8d735c9d2d84e8608ed" style="width: 100.0%; height: 100.0%;">Air Temp: 10 °C, Humidity: 46.3, knots: 4.6, MaxWindSpeed 8.0, precipitation  0.08G, GHI_w/m2: 88, date: 2024-08-16</div>`)[0];
+                popup_dbc925cf3f7cc030695a1f7f2ab9e8a9.setContent(html_ca4f809115b0d8d735c9d2d84e8608ed);
+            
+        
+
+        marker_ebc20943a4a32a57cd0a006afb6826de.bindPopup(popup_dbc925cf3f7cc030695a1f7f2ab9e8a9)
+        ;
+
+        
+    
+    
+            var marker_888900804846a44e9e4485a5831c8621 = L.marker(
+                [-36.3756, 143.7243],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_83af2f700e433e81284cc2f3fd93a911 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_888900804846a44e9e4485a5831c8621.setIcon(icon_83af2f700e433e81284cc2f3fd93a911);
+        
+    
+        var popup_673856cb19aebfbc596d145e78b01cc8 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_3b171c682f190cef4e7ccf8c611f1435 = $(`<div id="html_3b171c682f190cef4e7ccf8c611f1435" style="width: 100.0%; height: 100.0%;">Air Temp: 13 °C, Humidity: 47.1, knots: 8.1, MaxWindSpeed 12.0, precipitation  0.01G, GHI_w/m2: 114, date: 2024-08-26</div>`)[0];
+                popup_673856cb19aebfbc596d145e78b01cc8.setContent(html_3b171c682f190cef4e7ccf8c611f1435);
+            
+        
+
+        marker_888900804846a44e9e4485a5831c8621.bindPopup(popup_673856cb19aebfbc596d145e78b01cc8)
+        ;
+
+        
+    
+    
+            var marker_176c57c4a0ca7f252308c94c3be67bd2 = L.marker(
+                [-36.009, 143.185],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_0024b203e3c45a2e4b6936a8bd1da989 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_176c57c4a0ca7f252308c94c3be67bd2.setIcon(icon_0024b203e3c45a2e4b6936a8bd1da989);
+        
+    
+        var popup_b2527920cbab7b6ada9340ed66addb53 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_ef5d637ce2ac9d0f906a10590a9439b1 = $(`<div id="html_ef5d637ce2ac9d0f906a10590a9439b1" style="width: 100.0%; height: 100.0%;">Air Temp: 28 °C, Humidity: 48.3, knots: 11.9, MaxWindSpeed 22.0, precipitation  0.00I, GHI_w/m2: 243, date: 2024-09-05</div>`)[0];
+                popup_b2527920cbab7b6ada9340ed66addb53.setContent(html_ef5d637ce2ac9d0f906a10590a9439b1);
+            
+        
+
+        marker_176c57c4a0ca7f252308c94c3be67bd2.bindPopup(popup_b2527920cbab7b6ada9340ed66addb53)
+        ;
+
+        
+    
+    
+            var marker_58b07c590304d84a595394bf4e62fed5 = L.marker(
+                [-37.437, 148.104],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_68a63c07806bbb7085fa2f41c706403a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_58b07c590304d84a595394bf4e62fed5.setIcon(icon_68a63c07806bbb7085fa2f41c706403a);
+        
+    
+        var popup_648decc96275df97f213149481e74ef4 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_83f38d291ffea7dd88917624f1d321c3 = $(`<div id="html_83f38d291ffea7dd88917624f1d321c3" style="width: 100.0%; height: 100.0%;">Air Temp: 12 °C, Humidity: 40.7, knots: 16.7, MaxWindSpeed 21.0, precipitation  0.12G, GHI_w/m2: 111, date: 2024-09-15</div>`)[0];
+                popup_648decc96275df97f213149481e74ef4.setContent(html_83f38d291ffea7dd88917624f1d321c3);
+            
+        
+
+        marker_58b07c590304d84a595394bf4e62fed5.bindPopup(popup_648decc96275df97f213149481e74ef4)
+        ;
+
+        
+    
+    
+            var marker_ca0e58276dd290ffca1b009b90eb58dd = L.marker(
+                [-37.63, 149.232],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_d57feda35a81d22762d9cd6159697cc0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ca0e58276dd290ffca1b009b90eb58dd.setIcon(icon_d57feda35a81d22762d9cd6159697cc0);
+        
+    
+        var popup_dd1d247e1e5ffd0cb33b257c7a96714a = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_d22857950d4ef6984875d78c486e27ee = $(`<div id="html_d22857950d4ef6984875d78c486e27ee" style="width: 100.0%; height: 100.0%;">Air Temp: 18 °C, Humidity: 57.0, knots: 7.4, MaxWindSpeed 15.0, precipitation  0.00I, GHI_w/m2: 145, date: 2024-09-24</div>`)[0];
+                popup_dd1d247e1e5ffd0cb33b257c7a96714a.setContent(html_d22857950d4ef6984875d78c486e27ee);
+            
+        
+
+        marker_ca0e58276dd290ffca1b009b90eb58dd.bindPopup(popup_dd1d247e1e5ffd0cb33b257c7a96714a)
+        ;
+
+        
+    
+    
+            var marker_380440369c97a43528f718b12d6b2332 = L.marker(
+                [-37.475, 143.365],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_b1668d0b0c9954b1b1889b71b43a412f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_380440369c97a43528f718b12d6b2332.setIcon(icon_b1668d0b0c9954b1b1889b71b43a412f);
+        
+    
+        var popup_082345cbeb3a268828ef065a40f7c947 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_c9dd9e8bb7a191ceca5297faddf6037b = $(`<div id="html_c9dd9e8bb7a191ceca5297faddf6037b" style="width: 100.0%; height: 100.0%;">Air Temp: 17 °C, Humidity: 49.9, knots: 12.2, MaxWindSpeed 21.0, precipitation  0.24G, GHI_w/m2: 146, date: 2024-10-04</div>`)[0];
+                popup_082345cbeb3a268828ef065a40f7c947.setContent(html_c9dd9e8bb7a191ceca5297faddf6037b);
+            
+        
+
+        marker_380440369c97a43528f718b12d6b2332.bindPopup(popup_082345cbeb3a268828ef065a40f7c947)
+        ;
+
+        
+    
+    
+            var marker_db19d62a0091e27d9880b7708d8c7a9c = L.marker(
+                [-35.954, 141.076],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_cad507e7d4dfe9a476390f3fa5c0c5c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_db19d62a0091e27d9880b7708d8c7a9c.setIcon(icon_cad507e7d4dfe9a476390f3fa5c0c5c4);
+        
+    
+        var popup_c12ca5f2027d909571da452a97789585 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_75598c65f8c2a570899370ccb6e70ed9 = $(`<div id="html_75598c65f8c2a570899370ccb6e70ed9" style="width: 100.0%; height: 100.0%;">Air Temp: 10 °C, Humidity: 42.1, knots: 9.4, MaxWindSpeed 15.0, precipitation  0.13B, GHI_w/m2: 91, date: 2024-10-14</div>`)[0];
+                popup_c12ca5f2027d909571da452a97789585.setContent(html_75598c65f8c2a570899370ccb6e70ed9);
+            
+        
+
+        marker_db19d62a0091e27d9880b7708d8c7a9c.bindPopup(popup_c12ca5f2027d909571da452a97789585)
+        ;
+
+        
+    
+    
+            var marker_ac4a15bfad09ff76f9ecad18d5704f44 = L.marker(
+                [-37.384, 149.336],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_0bdc53d6b28d4f99e7d782fdf64d7151 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ac4a15bfad09ff76f9ecad18d5704f44.setIcon(icon_0bdc53d6b28d4f99e7d782fdf64d7151);
+        
+    
+        var popup_24ddfcf847ef3b7dd03a10c9990a99ef = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_8a56c3c3fff99a2cddbfd5bcd43ec3f4 = $(`<div id="html_8a56c3c3fff99a2cddbfd5bcd43ec3f4" style="width: 100.0%; height: 100.0%;">Air Temp: 16 °C, Humidity: 48.9, knots: 5.4, MaxWindSpeed 8.9, precipitation  0.00I, GHI_w/m2: 138, date: 2024-10-24</div>`)[0];
+                popup_24ddfcf847ef3b7dd03a10c9990a99ef.setContent(html_8a56c3c3fff99a2cddbfd5bcd43ec3f4);
+            
+        
+
+        marker_ac4a15bfad09ff76f9ecad18d5704f44.bindPopup(popup_24ddfcf847ef3b7dd03a10c9990a99ef)
+        ;
+
+        
+    
+    
+            var marker_1ee96cbbee5a7c151329a966eb010c62 = L.marker(
+                [-36.1704, 144.0433],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_3fea4fc542ae8627851f3656174050d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1ee96cbbee5a7c151329a966eb010c62.setIcon(icon_3fea4fc542ae8627851f3656174050d9);
+        
+    
+        var popup_6b4f38d662cf30e2aaa975d039b0a364 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_e94fe3a15e7dfbb2e85b84e574277776 = $(`<div id="html_e94fe3a15e7dfbb2e85b84e574277776" style="width: 100.0%; height: 100.0%;">Air Temp: 11 °C, Humidity: 41.7, knots: 8.7, MaxWindSpeed 19.0, precipitation  0.00I, GHI_w/m2: 101, date: 2024-11-03</div>`)[0];
+                popup_6b4f38d662cf30e2aaa975d039b0a364.setContent(html_e94fe3a15e7dfbb2e85b84e574277776);
+            
+        
+
+        marker_1ee96cbbee5a7c151329a966eb010c62.bindPopup(popup_6b4f38d662cf30e2aaa975d039b0a364)
+        ;
+
+        
+    
+    
+            var marker_f7e2d1c9971770f9a7259ac4c1c5b86d = L.marker(
+                [-36.4274, 142.1944],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_e99754362ca5017dd0143c8187140edf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f7e2d1c9971770f9a7259ac4c1c5b86d.setIcon(icon_e99754362ca5017dd0143c8187140edf);
+        
+    
+        var popup_920a9d684e88f74a1be31ab8894b219c = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_b9d5a80c75c4be88c0f901ea1a2cf5d8 = $(`<div id="html_b9d5a80c75c4be88c0f901ea1a2cf5d8" style="width: 100.0%; height: 100.0%;">Air Temp: 22 °C, Humidity: 46.9, knots: 12.9, MaxWindSpeed 19.0, precipitation  0.00I, GHI_w/m2: 193, date: 2024-11-13</div>`)[0];
+                popup_920a9d684e88f74a1be31ab8894b219c.setContent(html_b9d5a80c75c4be88c0f901ea1a2cf5d8);
+            
+        
+
+        marker_f7e2d1c9971770f9a7259ac4c1c5b86d.bindPopup(popup_920a9d684e88f74a1be31ab8894b219c)
+        ;
+
+        
+    
+    
+            var marker_0eed051d5b227b0496e3c36d4fce19ae = L.marker(
+                [-34.5374, 141.7141],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_16ed95bdc7d621d20deaa91fd499bdce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0eed051d5b227b0496e3c36d4fce19ae.setIcon(icon_16ed95bdc7d621d20deaa91fd499bdce);
+        
+    
+        var popup_851bbe5e7e8780ecb8957646a4407cff = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_33df1a4d168f860daa213b465e7dff54 = $(`<div id="html_33df1a4d168f860daa213b465e7dff54" style="width: 100.0%; height: 100.0%;">Air Temp: 8 °C, Humidity: 40.8, knots: 5.5, MaxWindSpeed 9.9, precipitation  0.01G, GHI_w/m2: 74, date: 2024-11-23</div>`)[0];
+                popup_851bbe5e7e8780ecb8957646a4407cff.setContent(html_33df1a4d168f860daa213b465e7dff54);
+            
+        
+
+        marker_0eed051d5b227b0496e3c36d4fce19ae.bindPopup(popup_851bbe5e7e8780ecb8957646a4407cff)
+        ;
+
+        
+    
+    
+            var marker_42d334315537dc92001285176f6ea10f = L.marker(
+                [-35.0889, 141.2419],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_9913f3be1c7d2af1581ef894827cb2e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_42d334315537dc92001285176f6ea10f.setIcon(icon_9913f3be1c7d2af1581ef894827cb2e5);
+        
+    
+        var popup_1c1097f30da83cf2eca538f4d65074a6 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_b5e1c3f13c6515ebaff22e0b27139f5f = $(`<div id="html_b5e1c3f13c6515ebaff22e0b27139f5f" style="width: 100.0%; height: 100.0%;">Air Temp: 12 °C, Humidity: 44.4, knots: 7.8, MaxWindSpeed 14.0, precipitation  0.00G, GHI_w/m2: 108, date: 2024-12-03</div>`)[0];
+                popup_1c1097f30da83cf2eca538f4d65074a6.setContent(html_b5e1c3f13c6515ebaff22e0b27139f5f);
+            
+        
+
+        marker_42d334315537dc92001285176f6ea10f.bindPopup(popup_1c1097f30da83cf2eca538f4d65074a6)
+        ;
+
+        
+    
+    
+            var marker_c6643454e53acd35fa716d5028a9f8cc = L.marker(
+                [-37.591, 149.33],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_861e975e08f1af57cc319bdf019bff59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c6643454e53acd35fa716d5028a9f8cc.setIcon(icon_861e975e08f1af57cc319bdf019bff59);
+        
+    
+        var popup_dde75602da9b00c1807159e099cbcf4f = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_af74cc3d391978c65b7a0a5c3177714b = $(`<div id="html_af74cc3d391978c65b7a0a5c3177714b" style="width: 100.0%; height: 100.0%;">Air Temp: 16 °C, Humidity: 46.7, knots: 10.0, MaxWindSpeed 16.9, precipitation  0.00I, GHI_w/m2: 141, date: 2024-12-13</div>`)[0];
+                popup_dde75602da9b00c1807159e099cbcf4f.setContent(html_af74cc3d391978c65b7a0a5c3177714b);
+            
+        
+
+        marker_c6643454e53acd35fa716d5028a9f8cc.bindPopup(popup_dde75602da9b00c1807159e099cbcf4f)
+        ;
+
+        
+    
+    
+            var marker_0f996bb71e7929ea7d396f20e6205b75 = L.marker(
+                [-37.562, 148.05],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_aeeac5d3bfb5b708b145e52a8dd66ce7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0f996bb71e7929ea7d396f20e6205b75.setIcon(icon_aeeac5d3bfb5b708b145e52a8dd66ce7);
+        
+    
+        var popup_5dcf46d7f96aaf210715cbfca1ede74a = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_d42413c3e91c701852e82559e6660bc3 = $(`<div id="html_d42413c3e91c701852e82559e6660bc3" style="width: 100.0%; height: 100.0%;">Air Temp: 7 °C, Humidity: 40.5, knots: 3.1, MaxWindSpeed 8.0, precipitation  0.00I, GHI_w/m2: 65, date: 2024-12-23</div>`)[0];
+                popup_5dcf46d7f96aaf210715cbfca1ede74a.setContent(html_d42413c3e91c701852e82559e6660bc3);
+            
+        
+
+        marker_0f996bb71e7929ea7d396f20e6205b75.bindPopup(popup_5dcf46d7f96aaf210715cbfca1ede74a)
+        ;
+
+        
+    
+    
+            var marker_3aef540d9f3fa3dc19d0304d07d37280 = L.marker(
+                [-37.6593, 143.3445],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_d1083d4c79e88de21f64bd7c569c2f0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3aef540d9f3fa3dc19d0304d07d37280.setIcon(icon_d1083d4c79e88de21f64bd7c569c2f0c);
+        
+    
+        var popup_be9079552b6f95c46faf0e0617328f1a = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_951d31df1002a52a1178e25245374e62 = $(`<div id="html_951d31df1002a52a1178e25245374e62" style="width: 100.0%; height: 100.0%;">Air Temp: 9 °C, Humidity: 40.1, knots: 12.1, MaxWindSpeed 15.0, precipitation  0.08G, GHI_w/m2: 84, date: 2024-09-01</div>`)[0];
+                popup_be9079552b6f95c46faf0e0617328f1a.setContent(html_951d31df1002a52a1178e25245374e62);
+            
+        
+
+        marker_3aef540d9f3fa3dc19d0304d07d37280.bindPopup(popup_be9079552b6f95c46faf0e0617328f1a)
+        ;
+
+        
+    
+    
+            var marker_5d2888e2229907335030a0a8e8412f45 = L.marker(
+                [-37.471, 148.091],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_ed0b918358fd8cea39fa7adeab2ca3af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5d2888e2229907335030a0a8e8412f45.setIcon(icon_ed0b918358fd8cea39fa7adeab2ca3af);
+        
+    
+        var popup_936da599600c89fe41c02eb450659c0d = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_ddd50b4cc17f84b222840cdee893f968 = $(`<div id="html_ddd50b4cc17f84b222840cdee893f968" style="width: 100.0%; height: 100.0%;">Air Temp: 9 °C, Humidity: 40.8, knots: 6.7, MaxWindSpeed 15.0, precipitation  0.01G, GHI_w/m2: 83, date: 2024-09-02</div>`)[0];
+                popup_936da599600c89fe41c02eb450659c0d.setContent(html_ddd50b4cc17f84b222840cdee893f968);
+            
+        
+
+        marker_5d2888e2229907335030a0a8e8412f45.bindPopup(popup_936da599600c89fe41c02eb450659c0d)
+        ;
+
+        
+    
+    
+            var marker_526f36803e9ffde7f3d7de7590a7f663 = L.marker(
+                [-37.606, 149.312],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_8d7a88d41e74537c4c7ac4c40f93c09d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_526f36803e9ffde7f3d7de7590a7f663.setIcon(icon_8d7a88d41e74537c4c7ac4c40f93c09d);
+        
+    
+        var popup_2b50463ce85fdbd3bb79c3372f015523 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_44c33489958e03061e81065b187cb4bb = $(`<div id="html_44c33489958e03061e81065b187cb4bb" style="width: 100.0%; height: 100.0%;">Air Temp: 16 °C, Humidity: 51.0, knots: 6.0, MaxWindSpeed 13.0, precipitation  0.00G, GHI_w/m2: 136, date: 2024-09-03</div>`)[0];
+                popup_2b50463ce85fdbd3bb79c3372f015523.setContent(html_44c33489958e03061e81065b187cb4bb);
+            
+        
+
+        marker_526f36803e9ffde7f3d7de7590a7f663.bindPopup(popup_2b50463ce85fdbd3bb79c3372f015523)
+        ;
+
+        
+    
+    
+            var marker_c49ae09115a3025f3a7a20fcebfa25ae = L.marker(
+                [-36.5794, 142.5959],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_f673255f95fbe4fc37ee75c58ff4af80 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c49ae09115a3025f3a7a20fcebfa25ae.setIcon(icon_f673255f95fbe4fc37ee75c58ff4af80);
+        
+    
+        var popup_7f5dbd45128b48c79ddf27a0d8a86814 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_501a06fe26e34256fddce27507d019d3 = $(`<div id="html_501a06fe26e34256fddce27507d019d3" style="width: 100.0%; height: 100.0%;">Air Temp: 24 °C, Humidity: 51.8, knots: 7.9, MaxWindSpeed 15.0, precipitation  0.00I, GHI_w/m2: 203, date: 2024-09-04</div>`)[0];
+                popup_7f5dbd45128b48c79ddf27a0d8a86814.setContent(html_501a06fe26e34256fddce27507d019d3);
+            
+        
+
+        marker_c49ae09115a3025f3a7a20fcebfa25ae.bindPopup(popup_7f5dbd45128b48c79ddf27a0d8a86814)
+        ;
+
+        
+    
+    
+            var marker_37dd55157a1086f1ddb4dbe7d6172468 = L.marker(
+                [-36.943, 143.286],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_d16bf0debdd09604b2f119d71a3fb3ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_37dd55157a1086f1ddb4dbe7d6172468.setIcon(icon_d16bf0debdd09604b2f119d71a3fb3ab);
+        
+    
+        var popup_b19626a581ea32d5e8a8bd83ca40a4f9 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_31553150f2a67b308f70e0ca155a7139 = $(`<div id="html_31553150f2a67b308f70e0ca155a7139" style="width: 100.0%; height: 100.0%;">Air Temp: 24 °C, Humidity: 55.2, knots: 5.8, MaxWindSpeed 11.1, precipitation  0.00I, GHI_w/m2: 197, date: 2024-09-05</div>`)[0];
+                popup_b19626a581ea32d5e8a8bd83ca40a4f9.setContent(html_31553150f2a67b308f70e0ca155a7139);
+            
+        
+
+        marker_37dd55157a1086f1ddb4dbe7d6172468.bindPopup(popup_b19626a581ea32d5e8a8bd83ca40a4f9)
+        ;
+
+        
+    
+    
+            var marker_c3ca31027c270d0a7cbe4fd930598e93 = L.marker(
+                [-37.559, 148.037],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_e9fd367d0c9df36978ca1310cdb3ca81 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c3ca31027c270d0a7cbe4fd930598e93.setIcon(icon_e9fd367d0c9df36978ca1310cdb3ca81);
+        
+    
+        var popup_2ef722f51e0b97bfa4a75e82a50607d6 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_a9e3da4c7a039a41766fbbc5e22d9445 = $(`<div id="html_a9e3da4c7a039a41766fbbc5e22d9445" style="width: 100.0%; height: 100.0%;">Air Temp: 9 °C, Humidity: 41.1, knots: 12.7, MaxWindSpeed 19.0, precipitation  0.24G, GHI_w/m2: 83, date: 2024-09-06</div>`)[0];
+                popup_2ef722f51e0b97bfa4a75e82a50607d6.setContent(html_a9e3da4c7a039a41766fbbc5e22d9445);
+            
+        
+
+        marker_c3ca31027c270d0a7cbe4fd930598e93.bindPopup(popup_2ef722f51e0b97bfa4a75e82a50607d6)
+        ;
+
+        
+    
+    
+            var marker_267629103385f7ed1ca1cbdd88f1cc64 = L.marker(
+                [-37.336, 148.073],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_58e21b9bdf9c4bc1022ffdf05e801690 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_267629103385f7ed1ca1cbdd88f1cc64.setIcon(icon_58e21b9bdf9c4bc1022ffdf05e801690);
+        
+    
+        var popup_94958ca8f234c53b32cbea01c587942c = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_d53f775617b2f29b9ad9860d151acd50 = $(`<div id="html_d53f775617b2f29b9ad9860d151acd50" style="width: 100.0%; height: 100.0%;">Air Temp: 7 °C, Humidity: 40.5, knots: 8.1, MaxWindSpeed 15.0, precipitation  0.12G, GHI_w/m2: 65, date: 2024-09-07</div>`)[0];
+                popup_94958ca8f234c53b32cbea01c587942c.setContent(html_d53f775617b2f29b9ad9860d151acd50);
+            
+        
+
+        marker_267629103385f7ed1ca1cbdd88f1cc64.bindPopup(popup_94958ca8f234c53b32cbea01c587942c)
+        ;
+
+        
+    
+    
+            var marker_b0ba24c298798e407c26037989177104 = L.marker(
+                [-37.8387, 144.6301],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_e0a14af9e47479a4141bc89420498f9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b0ba24c298798e407c26037989177104.setIcon(icon_e0a14af9e47479a4141bc89420498f9f);
+        
+    
+        var popup_577a6b12afe6c943a60c14690ed594dd = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_5b6ec795a58c3e09fb22f87d74423921 = $(`<div id="html_5b6ec795a58c3e09fb22f87d74423921" style="width: 100.0%; height: 100.0%;">Air Temp: 11 °C, Humidity: 41.4, knots: 7.7, MaxWindSpeed 15.0, precipitation  0.03G, GHI_w/m2: 101, date: 2024-09-08</div>`)[0];
+                popup_577a6b12afe6c943a60c14690ed594dd.setContent(html_5b6ec795a58c3e09fb22f87d74423921);
+            
+        
+
+        marker_b0ba24c298798e407c26037989177104.bindPopup(popup_577a6b12afe6c943a60c14690ed594dd)
+        ;
+
+        
+    
+    
+            var marker_a1e7354e5a58d46bce6d259b933c3972 = L.marker(
+                [-36.098, 143.735],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_f0b71abcc2c40e2b576b0a6e056ddad4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a1e7354e5a58d46bce6d259b933c3972.setIcon(icon_f0b71abcc2c40e2b576b0a6e056ddad4);
+        
+    
+        var popup_02d6dbb2b52b0f2f6245b0ad4db6349c = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_3239da9b5d56844ee9bb3ce022897075 = $(`<div id="html_3239da9b5d56844ee9bb3ce022897075" style="width: 100.0%; height: 100.0%;">Air Temp: 17 °C, Humidity: 58.1, knots: 11.7, MaxWindSpeed 19.0, precipitation  0.04G, GHI_w/m2: 136, date: 2024-09-09</div>`)[0];
+                popup_02d6dbb2b52b0f2f6245b0ad4db6349c.setContent(html_3239da9b5d56844ee9bb3ce022897075);
+            
+        
+
+        marker_a1e7354e5a58d46bce6d259b933c3972.bindPopup(popup_02d6dbb2b52b0f2f6245b0ad4db6349c)
+        ;
+
+        
+    
+    
+            var marker_3474124a45ed0096435880bc955a169e = L.marker(
+                [-37.602, 149.311],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_22fe518f30fe6d3c993da4708af2f254 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3474124a45ed0096435880bc955a169e.setIcon(icon_22fe518f30fe6d3c993da4708af2f254);
+        
+    
+        var popup_9448872c6e841bd68e081903e17e7ed6 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_8cb3340db96fc40bcd9a098fff411319 = $(`<div id="html_8cb3340db96fc40bcd9a098fff411319" style="width: 100.0%; height: 100.0%;">Air Temp: 14 °C, Humidity: 48.5, knots: 7.3, MaxWindSpeed 14.0, precipitation  0.00G, GHI_w/m2: 122, date: 2024-09-10</div>`)[0];
+                popup_9448872c6e841bd68e081903e17e7ed6.setContent(html_8cb3340db96fc40bcd9a098fff411319);
+            
+        
+
+        marker_3474124a45ed0096435880bc955a169e.bindPopup(popup_9448872c6e841bd68e081903e17e7ed6)
+        ;
+
+        
+    
+    
+            var marker_b1b2cef01dafe9195efc50f2cf008478 = L.marker(
+                [-35.889, 145.614],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_ca65cf98e935db8a85a0ed91fba5d140 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b1b2cef01dafe9195efc50f2cf008478.setIcon(icon_ca65cf98e935db8a85a0ed91fba5d140);
+        
+    
+        var popup_028488e6aa02ebd61f31c5dd8b116063 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_8929c0d2f884f26d86d8f39103f3ef74 = $(`<div id="html_8929c0d2f884f26d86d8f39103f3ef74" style="width: 100.0%; height: 100.0%;">Air Temp: 14 °C, Humidity: 49.2, knots: 10.5, MaxWindSpeed 20.0, precipitation  0.12G, GHI_w/m2: 121, date: 2024-09-11</div>`)[0];
+                popup_028488e6aa02ebd61f31c5dd8b116063.setContent(html_8929c0d2f884f26d86d8f39103f3ef74);
+            
+        
+
+        marker_b1b2cef01dafe9195efc50f2cf008478.bindPopup(popup_028488e6aa02ebd61f31c5dd8b116063)
+        ;
+
+        
+    
+    
+            var marker_f247d8030810a1ad870e58c10e04c287 = L.marker(
+                [-36.5243, 142.0839],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_3d568cdcc8e59d6cb6fd1b9e8e9b3672 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f247d8030810a1ad870e58c10e04c287.setIcon(icon_3d568cdcc8e59d6cb6fd1b9e8e9b3672);
+        
+    
+        var popup_0d99e9b94f0f9a9d35e20599fd9a0e91 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_7e61c7ec1daa864e9d34d1de50285e97 = $(`<div id="html_7e61c7ec1daa864e9d34d1de50285e97" style="width: 100.0%; height: 100.0%;">Air Temp: 9 °C, Humidity: 43.9, knots: 5.7, MaxWindSpeed 9.9, precipitation  0.00G, GHI_w/m2: 81, date: 2024-09-12</div>`)[0];
+                popup_0d99e9b94f0f9a9d35e20599fd9a0e91.setContent(html_7e61c7ec1daa864e9d34d1de50285e97);
+            
+        
+
+        marker_f247d8030810a1ad870e58c10e04c287.bindPopup(popup_0d99e9b94f0f9a9d35e20599fd9a0e91)
+        ;
+
+        
+    
+    
+            var marker_94735a22f9dce26300dc2024916f2271 = L.marker(
+                [-36.3782, 143.7313],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_4b414f6710c1a0b068bae4551a277d3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_94735a22f9dce26300dc2024916f2271.setIcon(icon_4b414f6710c1a0b068bae4551a277d3d);
+        
+    
+        var popup_64370f63b58a2f1550f026b5fc3b2469 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_0eb334cf6e8ef8a9ace3f33cdf1ca933 = $(`<div id="html_0eb334cf6e8ef8a9ace3f33cdf1ca933" style="width: 100.0%; height: 100.0%;">Air Temp: 17 °C, Humidity: 44.9, knots: 16.1, MaxWindSpeed 27.0, precipitation  0.24G, GHI_w/m2: 152, date: 2024-09-13</div>`)[0];
+                popup_64370f63b58a2f1550f026b5fc3b2469.setContent(html_0eb334cf6e8ef8a9ace3f33cdf1ca933);
+            
+        
+
+        marker_94735a22f9dce26300dc2024916f2271.bindPopup(popup_64370f63b58a2f1550f026b5fc3b2469)
+        ;
+
+        
+    
+    
+            var marker_eef04328e30a02fc119b33baf260fe67 = L.marker(
+                [-36.5871, 144.961],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_ef6c162e0ac0fa2c71e0d4c19a225760 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eef04328e30a02fc119b33baf260fe67.setIcon(icon_ef6c162e0ac0fa2c71e0d4c19a225760);
+        
+    
+        var popup_5c46d48714a7b4c25433ed284086b159 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_4b0a72689711ae5f3aa52bb80240e9f1 = $(`<div id="html_4b0a72689711ae5f3aa52bb80240e9f1" style="width: 100.0%; height: 100.0%;">Air Temp: 13 °C, Humidity: 43.6, knots: 9.0, MaxWindSpeed 15.0, precipitation  0.00I, GHI_w/m2: 117, date: 2024-09-14</div>`)[0];
+                popup_5c46d48714a7b4c25433ed284086b159.setContent(html_4b0a72689711ae5f3aa52bb80240e9f1);
+            
+        
+
+        marker_eef04328e30a02fc119b33baf260fe67.bindPopup(popup_5c46d48714a7b4c25433ed284086b159)
+        ;
+
+        
+    
+    
+            var marker_6b348b5956ca5de19e37cd36433c74fe = L.marker(
+                [-37.438, 148.09],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_7f917ad72940248c44d4f289fe036cde = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6b348b5956ca5de19e37cd36433c74fe.setIcon(icon_7f917ad72940248c44d4f289fe036cde);
+        
+    
+        var popup_56bc8ff2355164783536c4b41aa2157e = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_4cd583199b2a72ee866ff099d979d7d8 = $(`<div id="html_4cd583199b2a72ee866ff099d979d7d8" style="width: 100.0%; height: 100.0%;">Air Temp: 10 °C, Humidity: 44.7, knots: 8.0, MaxWindSpeed 15.9, precipitation  0.08G, GHI_w/m2: 90, date: 2024-09-19</div>`)[0];
+                popup_56bc8ff2355164783536c4b41aa2157e.setContent(html_4cd583199b2a72ee866ff099d979d7d8);
+            
+        
+
+        marker_6b348b5956ca5de19e37cd36433c74fe.bindPopup(popup_56bc8ff2355164783536c4b41aa2157e)
+        ;
+
+        
+    
+    
+            var marker_eac91e68df72aa15f6adf9f746fb9613 = L.marker(
+                [-37.293, 141.245],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_6498a2b89d45428469720876ff314ff4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eac91e68df72aa15f6adf9f746fb9613.setIcon(icon_6498a2b89d45428469720876ff314ff4);
+        
+    
+        var popup_cbbc905b469f21b8bd36a78e94194fa0 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_44b465ec3c3c0b229de9cf4a7e1ccbd6 = $(`<div id="html_44b465ec3c3c0b229de9cf4a7e1ccbd6" style="width: 100.0%; height: 100.0%;">Air Temp: 10 °C, Humidity: 45.7, knots: 3.7, MaxWindSpeed 8.0, precipitation  0.01G, GHI_w/m2: 89, date: 2024-09-20</div>`)[0];
+                popup_cbbc905b469f21b8bd36a78e94194fa0.setContent(html_44b465ec3c3c0b229de9cf4a7e1ccbd6);
+            
+        
+
+        marker_eac91e68df72aa15f6adf9f746fb9613.bindPopup(popup_cbbc905b469f21b8bd36a78e94194fa0)
+        ;
+
+        
+    
+    
+            var marker_52370d577ba97db5f5b15e61ccf10fe3 = L.marker(
+                [-37.562, 148.05],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_bc3869d760b816fdad14d1afe220a0fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_52370d577ba97db5f5b15e61ccf10fe3.setIcon(icon_bc3869d760b816fdad14d1afe220a0fb);
+        
+    
+        var popup_8c4948c2c0215f309fcb8cca163634bc = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_3b87b0f0aa9f846e498a02dad3451de9 = $(`<div id="html_3b87b0f0aa9f846e498a02dad3451de9" style="width: 100.0%; height: 100.0%;">Air Temp: 7 °C, Humidity: 40.5, knots: 3.1, MaxWindSpeed 8.0, precipitation  0.00I, GHI_w/m2: 65, date: 2024-09-21</div>`)[0];
+                popup_8c4948c2c0215f309fcb8cca163634bc.setContent(html_3b87b0f0aa9f846e498a02dad3451de9);
+            
+        
+
+        marker_52370d577ba97db5f5b15e61ccf10fe3.bindPopup(popup_8c4948c2c0215f309fcb8cca163634bc)
+        ;
+
+        
+    
+    
+            var marker_ff0e81695d5a4fbc8475837841c09b16 = L.marker(
+                [-37.365, 148.052],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_c9fe8ce1d501695844809114c7479c06 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ff0e81695d5a4fbc8475837841c09b16.setIcon(icon_c9fe8ce1d501695844809114c7479c06);
+        
+    
+        var popup_d4c6b3524da922213a338e72e7ad6422 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_66ce47b50fd9263266f1ba70c3ffb192 = $(`<div id="html_66ce47b50fd9263266f1ba70c3ffb192" style="width: 100.0%; height: 100.0%;">Air Temp: 11 °C, Humidity: 43.8, knots: 6.5, MaxWindSpeed 12.0, precipitation  0.02G, GHI_w/m2: 99, date: 2024-09-22</div>`)[0];
+                popup_d4c6b3524da922213a338e72e7ad6422.setContent(html_66ce47b50fd9263266f1ba70c3ffb192);
+            
+        
+
+        marker_ff0e81695d5a4fbc8475837841c09b16.bindPopup(popup_d4c6b3524da922213a338e72e7ad6422)
+        ;
+
+        
+    
+    
+            var marker_764017f9317564943d2e0379c0ac20db = L.marker(
+                [-37.591, 149.33],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_d39757ecaa566e719ba7052dfb1b6abd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_764017f9317564943d2e0379c0ac20db.setIcon(icon_d39757ecaa566e719ba7052dfb1b6abd);
+        
+    
+        var popup_e2632434b32a1b66d94260a143eb70c3 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_633b4964c53f3a2b9c1f6d5c64f3cc1c = $(`<div id="html_633b4964c53f3a2b9c1f6d5c64f3cc1c" style="width: 100.0%; height: 100.0%;">Air Temp: 16 °C, Humidity: 46.7, knots: 10.0, MaxWindSpeed 16.9, precipitation  0.00I, GHI_w/m2: 141, date: 2024-09-23</div>`)[0];
+                popup_e2632434b32a1b66d94260a143eb70c3.setContent(html_633b4964c53f3a2b9c1f6d5c64f3cc1c);
+            
+        
+
+        marker_764017f9317564943d2e0379c0ac20db.bindPopup(popup_e2632434b32a1b66d94260a143eb70c3)
+        ;
+
+        
+    
+    
+            var marker_6c9b161e3d2de505d9b449cbf459446a = L.marker(
+                [-37.469, 148.125],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_2a7b954fa8fdb4bd736d62b61f352b2b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6c9b161e3d2de505d9b449cbf459446a.setIcon(icon_2a7b954fa8fdb4bd736d62b61f352b2b);
+        
+    
+        var popup_0a5dc9288d8130559cee67a6bff898fd = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_adaf6be952e414512c00fe94ef993dcf = $(`<div id="html_adaf6be952e414512c00fe94ef993dcf" style="width: 100.0%; height: 100.0%;">Air Temp: 14 °C, Humidity: 48.4, knots: 7.5, MaxWindSpeed 13.0, precipitation  0.00G, GHI_w/m2: 122, date: 2024-09-30</div>`)[0];
+                popup_0a5dc9288d8130559cee67a6bff898fd.setContent(html_adaf6be952e414512c00fe94ef993dcf);
+            
+        
+
+        marker_6c9b161e3d2de505d9b449cbf459446a.bindPopup(popup_0a5dc9288d8130559cee67a6bff898fd)
+        ;
+
+        
+    
+    
+            var marker_f99af5f7d224da0754de98381be3cecd = L.marker(
+                [-35.364, 141.063],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_ff7a76fc3f76d06c62d3494add406a89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f99af5f7d224da0754de98381be3cecd.setIcon(icon_ff7a76fc3f76d06c62d3494add406a89);
+        
+    
+        var popup_e3e2d06628a326b4224349241e15cfcd = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_ec0ec36b53ae09de2260a19acf72f865 = $(`<div id="html_ec0ec36b53ae09de2260a19acf72f865" style="width: 100.0%; height: 100.0%;">Air Temp: 15 °C, Humidity: 51.9, knots: 6.6, MaxWindSpeed 12.0, precipitation  0.01G, GHI_w/m2: 127, date: 2024-10-01</div>`)[0];
+                popup_e3e2d06628a326b4224349241e15cfcd.setContent(html_ec0ec36b53ae09de2260a19acf72f865);
+            
+        
+
+        marker_f99af5f7d224da0754de98381be3cecd.bindPopup(popup_e3e2d06628a326b4224349241e15cfcd)
+        ;
+
+        
+    
+    
+            var marker_5732f7fc5c10cb59e34ea14a442dff3c = L.marker(
+                [-37.436, 148.088],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_fe53d7aa57c5b3dfcbcba472cbb0b074 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5732f7fc5c10cb59e34ea14a442dff3c.setIcon(icon_fe53d7aa57c5b3dfcbcba472cbb0b074);
+        
+    
+        var popup_c4682df2cffd3c0f9c59dcde89ed864e = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_55c3068087237ba54c7bafe63ab5b9dc = $(`<div id="html_55c3068087237ba54c7bafe63ab5b9dc" style="width: 100.0%; height: 100.0%;">Air Temp: 15 °C, Humidity: 41.5, knots: 17.0, MaxWindSpeed 28.9, precipitation  0.00I, GHI_w/m2: 138, date: 2024-10-02</div>`)[0];
+                popup_c4682df2cffd3c0f9c59dcde89ed864e.setContent(html_55c3068087237ba54c7bafe63ab5b9dc);
+            
+        
+
+        marker_5732f7fc5c10cb59e34ea14a442dff3c.bindPopup(popup_c4682df2cffd3c0f9c59dcde89ed864e)
+        ;
+
+        
+    
+    
+            var marker_20457996b37b6c3a637f35e7fef4849f = L.marker(
+                [-36.152, 143.578],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_59694bcde31c9ae1d524c35c08b8373d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_20457996b37b6c3a637f35e7fef4849f.setIcon(icon_59694bcde31c9ae1d524c35c08b8373d);
+        
+    
+        var popup_09fca183c4b9f3e9629512a4da4d2083 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_6dda0f6af4862e948965ee632f885826 = $(`<div id="html_6dda0f6af4862e948965ee632f885826" style="width: 100.0%; height: 100.0%;">Air Temp: 15 °C, Humidity: 56.1, knots: 5.1, MaxWindSpeed 9.9, precipitation  0.00I, GHI_w/m2: 122, date: 2024-10-03</div>`)[0];
+                popup_09fca183c4b9f3e9629512a4da4d2083.setContent(html_6dda0f6af4862e948965ee632f885826);
+            
+        
+
+        marker_20457996b37b6c3a637f35e7fef4849f.bindPopup(popup_09fca183c4b9f3e9629512a4da4d2083)
+        ;
+
+        
+    
+    
+            var marker_d87e04b0c87c2ccd7e4866a7f4f29c12 = L.marker(
+                [-37.363, 148.06],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_7f495c766d8cf2b54ad7f85a8f3d7e06 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d87e04b0c87c2ccd7e4866a7f4f29c12.setIcon(icon_7f495c766d8cf2b54ad7f85a8f3d7e06);
+        
+    
+        var popup_ffe00f8c33e6c2ede231ed6a1e1e6140 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_a1133c035e32866dc58c6f7f8f47d3a4 = $(`<div id="html_a1133c035e32866dc58c6f7f8f47d3a4" style="width: 100.0%; height: 100.0%;">Air Temp: 11 °C, Humidity: 35.3, knots: 18.2, MaxWindSpeed 25.1, precipitation  0.00I, GHI_w/m2: 106, date: 2024-10-04</div>`)[0];
+                popup_ffe00f8c33e6c2ede231ed6a1e1e6140.setContent(html_a1133c035e32866dc58c6f7f8f47d3a4);
+            
+        
+
+        marker_d87e04b0c87c2ccd7e4866a7f4f29c12.bindPopup(popup_ffe00f8c33e6c2ede231ed6a1e1e6140)
+        ;
+
+        
+    
+    
+            var marker_e964df98c28a87d9cc35faf7c1bc0397 = L.marker(
+                [-37.605, 149.326],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_7dbcbd5a283d4b17771379e224f42eb6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e964df98c28a87d9cc35faf7c1bc0397.setIcon(icon_7dbcbd5a283d4b17771379e224f42eb6);
+        
+    
+        var popup_3e60d0a3c502fbc388c501551b118c00 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_55d96e1db2052fa47606b30907c09421 = $(`<div id="html_55d96e1db2052fa47606b30907c09421" style="width: 100.0%; height: 100.0%;">Air Temp: 23 °C, Humidity: 49.6, knots: 10.0, MaxWindSpeed 19.0, precipitation  0.00I, GHI_w/m2: 198, date: 2024-10-05</div>`)[0];
+                popup_3e60d0a3c502fbc388c501551b118c00.setContent(html_55d96e1db2052fa47606b30907c09421);
+            
+        
+
+        marker_e964df98c28a87d9cc35faf7c1bc0397.bindPopup(popup_3e60d0a3c502fbc388c501551b118c00)
+        ;
+
+        
+    
+    
+            var marker_2bbb431546c11648a865cb8395ba8e6f = L.marker(
+                [-37.236, 141.176],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_357edf8b5e085a9b09858521b194d6cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2bbb431546c11648a865cb8395ba8e6f.setIcon(icon_357edf8b5e085a9b09858521b194d6cf);
+        
+    
+        var popup_92def0710eae7d6d546baf9e956fd0d3 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_8351b7256ca734a022b4deceaa2d78e6 = $(`<div id="html_8351b7256ca734a022b4deceaa2d78e6" style="width: 100.0%; height: 100.0%;">Air Temp: 14 °C, Humidity: 48.1, knots: 13.7, MaxWindSpeed 19.0, precipitation  0.35G, GHI_w/m2: 122, date: 2024-10-06</div>`)[0];
+                popup_92def0710eae7d6d546baf9e956fd0d3.setContent(html_8351b7256ca734a022b4deceaa2d78e6);
+            
+        
+
+        marker_2bbb431546c11648a865cb8395ba8e6f.bindPopup(popup_92def0710eae7d6d546baf9e956fd0d3)
+        ;
+
+        
+    
+    
+            var marker_d29c09e019f1971c3ab8bcdb91c2bc53 = L.marker(
+                [-38.167, 143.841],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_303e7665de48da9da55aff9217d9ada4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d29c09e019f1971c3ab8bcdb91c2bc53.setIcon(icon_303e7665de48da9da55aff9217d9ada4);
+        
+    
+        var popup_e6f1d9914cd2874e6fe0d485bb207acc = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_0628a75fe1d68974cc2f6d60694cf570 = $(`<div id="html_0628a75fe1d68974cc2f6d60694cf570" style="width: 100.0%; height: 100.0%;">Air Temp: 21 °C, Humidity: 58.1, knots: 5.3, MaxWindSpeed 11.1, precipitation  0.00G, GHI_w/m2: 168, date: 2024-10-07</div>`)[0];
+                popup_e6f1d9914cd2874e6fe0d485bb207acc.setContent(html_0628a75fe1d68974cc2f6d60694cf570);
+            
+        
+
+        marker_d29c09e019f1971c3ab8bcdb91c2bc53.bindPopup(popup_e6f1d9914cd2874e6fe0d485bb207acc)
+        ;
+
+        
+    
+    
+            var marker_36e24303d17fc339bd28ff5fe190c02f = L.marker(
+                [-37.858, 143.428],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_2b3cb20d3881ffe0c47548fd867f139a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_36e24303d17fc339bd28ff5fe190c02f.setIcon(icon_2b3cb20d3881ffe0c47548fd867f139a);
+        
+    
+        var popup_c84006ca56fa5a88b599e7a911a1cfc3 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_9d7f31115f432750f40837560015c459 = $(`<div id="html_9d7f31115f432750f40837560015c459" style="width: 100.0%; height: 100.0%;">Air Temp: 13 °C, Humidity: 50.4, knots: 7.9, MaxWindSpeed 14.0, precipitation  0.00I, GHI_w/m2: 111, date: 2024-10-12</div>`)[0];
+                popup_c84006ca56fa5a88b599e7a911a1cfc3.setContent(html_9d7f31115f432750f40837560015c459);
+            
+        
+
+        marker_36e24303d17fc339bd28ff5fe190c02f.bindPopup(popup_c84006ca56fa5a88b599e7a911a1cfc3)
+        ;
+
+        
+    
+    
+            var marker_a7edff37ffac4682fb5993f93e1d0d9a = L.marker(
+                [-36.4125, 143.1189],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_7a9cd2adbc36c9119c861004d8b698fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a7edff37ffac4682fb5993f93e1d0d9a.setIcon(icon_7a9cd2adbc36c9119c861004d8b698fe);
+        
+    
+        var popup_8ecdd7fb09287752c57871eb9dbfa612 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_57316850378b147cedd961cdbb388a9d = $(`<div id="html_57316850378b147cedd961cdbb388a9d" style="width: 100.0%; height: 100.0%;">Air Temp: 12 °C, Humidity: 47.9, knots: 6.7, MaxWindSpeed 11.1, precipitation  0.00G, GHI_w/m2: 105, date: 2024-10-13</div>`)[0];
+                popup_8ecdd7fb09287752c57871eb9dbfa612.setContent(html_57316850378b147cedd961cdbb388a9d);
+            
+        
+
+        marker_a7edff37ffac4682fb5993f93e1d0d9a.bindPopup(popup_8ecdd7fb09287752c57871eb9dbfa612)
+        ;
+
+        
+    
+    
+            var marker_796fca0e79c9547aa0cf2d117a571e02 = L.marker(
+                [-37.9072, 141.9183],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_3232e07cbfe7bd6bcb7db79ec72eaddf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_796fca0e79c9547aa0cf2d117a571e02.setIcon(icon_3232e07cbfe7bd6bcb7db79ec72eaddf);
+        
+    
+        var popup_786686b6076777d64126a7d723f55222 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_7690d97cfba989dc2d357b6a0136d252 = $(`<div id="html_7690d97cfba989dc2d357b6a0136d252" style="width: 100.0%; height: 100.0%;">Air Temp: 12 °C, Humidity: 43.3, knots: 7.0, MaxWindSpeed 11.1, precipitation  0.00G, GHI_w/m2: 109, date: 2024-10-14</div>`)[0];
+                popup_786686b6076777d64126a7d723f55222.setContent(html_7690d97cfba989dc2d357b6a0136d252);
+            
+        
+
+        marker_796fca0e79c9547aa0cf2d117a571e02.bindPopup(popup_786686b6076777d64126a7d723f55222)
+        ;
+
+        
+    
+    
+            var marker_78d77a267f2d2b9c53e2ae43ac303fdf = L.marker(
+                [-37.1875, 146.8024],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_aba2055854a3e8a270bf59c321051c62 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_78d77a267f2d2b9c53e2ae43ac303fdf.setIcon(icon_aba2055854a3e8a270bf59c321051c62);
+        
+    
+        var popup_05348c5459698f1ebda6bba22d5112cb = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_248ce3e2441340f1848f8e1e2ba2a073 = $(`<div id="html_248ce3e2441340f1848f8e1e2ba2a073" style="width: 100.0%; height: 100.0%;">Air Temp: 28 °C, Humidity: 58.3, knots: 9.3, MaxWindSpeed 15.9, precipitation  0.00I, GHI_w/m2: 223, date: 2024-10-15</div>`)[0];
+                popup_05348c5459698f1ebda6bba22d5112cb.setContent(html_248ce3e2441340f1848f8e1e2ba2a073);
+            
+        
+
+        marker_78d77a267f2d2b9c53e2ae43ac303fdf.bindPopup(popup_05348c5459698f1ebda6bba22d5112cb)
+        ;
+
+        
+    
+    
+            var marker_c6283c1e3a9fdc2d4324a650e75ec27e = L.marker(
+                [-36.251, 142.5651],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_88c03f0df818c7d747d728fdea0b28ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c6283c1e3a9fdc2d4324a650e75ec27e.setIcon(icon_88c03f0df818c7d747d728fdea0b28ec);
+        
+    
+        var popup_4bb83e2ae91dfa5aa3d5ab7256c90031 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_3294e66cd2f2a0cd763795ae534fd538 = $(`<div id="html_3294e66cd2f2a0cd763795ae534fd538" style="width: 100.0%; height: 100.0%;">Air Temp: 17 °C, Humidity: 53.6, knots: 7.6, MaxWindSpeed 15.0, precipitation  0.00I, GHI_w/m2: 141, date: 2024-10-16</div>`)[0];
+                popup_4bb83e2ae91dfa5aa3d5ab7256c90031.setContent(html_3294e66cd2f2a0cd763795ae534fd538);
+            
+        
+
+        marker_c6283c1e3a9fdc2d4324a650e75ec27e.bindPopup(popup_4bb83e2ae91dfa5aa3d5ab7256c90031)
+        ;
+
+        
+    
+    
+            var marker_9a04cc841fc8ad8cb8b5f9041a1a4a92 = L.marker(
+                [-37.608, 149.282],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_5016a9b64cb55ed042678d22a95a0242 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9a04cc841fc8ad8cb8b5f9041a1a4a92.setIcon(icon_5016a9b64cb55ed042678d22a95a0242);
+        
+    
+        var popup_297d6cd489c4f5c49c71f843d4fba8f4 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_1d156564d92a982b8d419b52c4062d47 = $(`<div id="html_1d156564d92a982b8d419b52c4062d47" style="width: 100.0%; height: 100.0%;">Air Temp: 22 °C, Humidity: 62.7, knots: 7.6, MaxWindSpeed 18.1, precipitation  0.00I, GHI_w/m2: 169, date: 2024-10-17</div>`)[0];
+                popup_297d6cd489c4f5c49c71f843d4fba8f4.setContent(html_1d156564d92a982b8d419b52c4062d47);
+            
+        
+
+        marker_9a04cc841fc8ad8cb8b5f9041a1a4a92.bindPopup(popup_297d6cd489c4f5c49c71f843d4fba8f4)
+        ;
+
+        
+    
+    
+            var marker_d27af29ffbbc9ed5b01feb14eafaf2b5 = L.marker(
+                [-36.6859, 146.8907],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_244bd195769f75d99eabe7786d0a17cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d27af29ffbbc9ed5b01feb14eafaf2b5.setIcon(icon_244bd195769f75d99eabe7786d0a17cf);
+        
+    
+        var popup_2d3c0519b8da7b424e92fd08251ab4d6 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_bd583346834b9ada5f540c30d6a1d8d8 = $(`<div id="html_bd583346834b9ada5f540c30d6a1d8d8" style="width: 100.0%; height: 100.0%;">Air Temp: 16 °C, Humidity: 51.5, knots: 8.7, MaxWindSpeed 15.0, precipitation  0.02G, GHI_w/m2: 135, date: 2024-10-18</div>`)[0];
+                popup_2d3c0519b8da7b424e92fd08251ab4d6.setContent(html_bd583346834b9ada5f540c30d6a1d8d8);
+            
+        
+
+        marker_d27af29ffbbc9ed5b01feb14eafaf2b5.bindPopup(popup_2d3c0519b8da7b424e92fd08251ab4d6)
+        ;
+
+        
+    
+    
+            var marker_32d5b70ad5aa581cdcaadc28d34d8fdb = L.marker(
+                [-36.942, 143.292],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_c88c576b6bfbfe0e20127308b1b5c3a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_32d5b70ad5aa581cdcaadc28d34d8fdb.setIcon(icon_c88c576b6bfbfe0e20127308b1b5c3a2);
+        
+    
+        var popup_1515cd7487feb857b7d5e46d57b4df80 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_008ec8d8e9c724bffe90987afb38a4fb = $(`<div id="html_008ec8d8e9c724bffe90987afb38a4fb" style="width: 100.0%; height: 100.0%;">Air Temp: 18 °C, Humidity: 51.1, knots: 8.1, MaxWindSpeed 15.0, precipitation  0.00I, GHI_w/m2: 153, date: 2024-10-19</div>`)[0];
+                popup_1515cd7487feb857b7d5e46d57b4df80.setContent(html_008ec8d8e9c724bffe90987afb38a4fb);
+            
+        
+
+        marker_32d5b70ad5aa581cdcaadc28d34d8fdb.bindPopup(popup_1515cd7487feb857b7d5e46d57b4df80)
+        ;
+
+        
+    
+    
+            var marker_1358e193886e5653d9ac15964b4c40e2 = L.marker(
+                [-37.5865, 143.0246],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_4de8ac72b6b40974e30666f670f77445 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1358e193886e5653d9ac15964b4c40e2.setIcon(icon_4de8ac72b6b40974e30666f670f77445);
+        
+    
+        var popup_82397d8188c8cd13ca2946d0f83d3b99 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_1c8ce589ec8d87e4c06c12885be50736 = $(`<div id="html_1c8ce589ec8d87e4c06c12885be50736" style="width: 100.0%; height: 100.0%;">Air Temp: 17 °C, Humidity: 53.5, knots: 7.3, MaxWindSpeed 14.0, precipitation  0.00I, GHI_w/m2: 141, date: 2024-10-20</div>`)[0];
+                popup_82397d8188c8cd13ca2946d0f83d3b99.setContent(html_1c8ce589ec8d87e4c06c12885be50736);
+            
+        
+
+        marker_1358e193886e5653d9ac15964b4c40e2.bindPopup(popup_82397d8188c8cd13ca2946d0f83d3b99)
+        ;
+
+        
+    
+    
+            var marker_612448206337c2ecdd67c37468712579 = L.marker(
+                [-36.779, 146.108],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_07cb97ede68cc931fff431d6f7e50704 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_612448206337c2ecdd67c37468712579.setIcon(icon_07cb97ede68cc931fff431d6f7e50704);
+        
+    
+        var popup_3be50f8b8c2bf083526d7117371e8099 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_6fa128f294719e17933ae14efeb39f32 = $(`<div id="html_6fa128f294719e17933ae14efeb39f32" style="width: 100.0%; height: 100.0%;">Air Temp: 15 °C, Humidity: 51.0, knots: 9.6, MaxWindSpeed 15.9, precipitation  0.16G, GHI_w/m2: 128, date: 2024-10-21</div>`)[0];
+                popup_3be50f8b8c2bf083526d7117371e8099.setContent(html_6fa128f294719e17933ae14efeb39f32);
+            
+        
+
+        marker_612448206337c2ecdd67c37468712579.bindPopup(popup_3be50f8b8c2bf083526d7117371e8099)
+        ;
+
+        
+    
+    
+            var marker_480bc58b58c11919fa1751f000c3f88f = L.marker(
+                [-36.778, 145.1635],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_43578c49de39551320370cb543445fa3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_480bc58b58c11919fa1751f000c3f88f.setIcon(icon_43578c49de39551320370cb543445fa3);
+        
+    
+        var popup_16af1725da450be26f11b7ecff5a8ca8 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_d3e1223cc5c55b1991c87533681ddabc = $(`<div id="html_d3e1223cc5c55b1991c87533681ddabc" style="width: 100.0%; height: 100.0%;">Air Temp: 17 °C, Humidity: 46.3, knots: 11.7, MaxWindSpeed 20.0, precipitation  0.02G, GHI_w/m2: 150, date: 2024-10-22</div>`)[0];
+                popup_16af1725da450be26f11b7ecff5a8ca8.setContent(html_d3e1223cc5c55b1991c87533681ddabc);
+            
+        
+
+        marker_480bc58b58c11919fa1751f000c3f88f.bindPopup(popup_16af1725da450be26f11b7ecff5a8ca8)
+        ;
+
+        
+    
+    
+            var marker_e2d95cdbbc6a28baa02d44e778ec6904 = L.marker(
+                [-37.6008, 143.0558],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_f2148ae0081151461653356037b77a66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e2d95cdbbc6a28baa02d44e778ec6904.setIcon(icon_f2148ae0081151461653356037b77a66);
+        
+    
+        var popup_da50becfdcc26070213e800868cb53ae = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_ec452f9d1c1dd8f8745aeddeb01cb1f8 = $(`<div id="html_ec452f9d1c1dd8f8745aeddeb01cb1f8" style="width: 100.0%; height: 100.0%;">Air Temp: 15 °C, Humidity: 44.8, knots: 8.3, MaxWindSpeed 19.0, precipitation  0.00I, GHI_w/m2: 134, date: 2024-10-23</div>`)[0];
+                popup_da50becfdcc26070213e800868cb53ae.setContent(html_ec452f9d1c1dd8f8745aeddeb01cb1f8);
+            
+        
+
+        marker_e2d95cdbbc6a28baa02d44e778ec6904.bindPopup(popup_da50becfdcc26070213e800868cb53ae)
+        ;
+
+        
+    
+    
+            var marker_06b1659dd5fad24df2ba9c041880b569 = L.marker(
+                [-35.962, 143.791],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_3931a2ec41f5a626097dc4ba1c3d4117 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_06b1659dd5fad24df2ba9c041880b569.setIcon(icon_3931a2ec41f5a626097dc4ba1c3d4117);
+        
+    
+        var popup_e9554b373e86b7725aff231c6abcd94d = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_6dace8b2373c1fe02cf400016b1b50ee = $(`<div id="html_6dace8b2373c1fe02cf400016b1b50ee" style="width: 100.0%; height: 100.0%;">Air Temp: 14 °C, Humidity: 49.9, knots: 6.8, MaxWindSpeed 15.9, precipitation  0.00G, GHI_w/m2: 120, date: 2024-10-24</div>`)[0];
+                popup_e9554b373e86b7725aff231c6abcd94d.setContent(html_6dace8b2373c1fe02cf400016b1b50ee);
+            
+        
+
+        marker_06b1659dd5fad24df2ba9c041880b569.bindPopup(popup_e9554b373e86b7725aff231c6abcd94d)
+        ;
+
+        
+    
+    
+            var marker_35ce5630958b08377b64ef0fc42d4473 = L.marker(
+                [-37.561, 148.032],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_1122914c49810a48850f5812aa76b549 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_35ce5630958b08377b64ef0fc42d4473.setIcon(icon_1122914c49810a48850f5812aa76b549);
+        
+    
+        var popup_af761340011c5acb2409997c9faefbe2 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_c8d779c4d4694f5d3abca57acb1e7236 = $(`<div id="html_c8d779c4d4694f5d3abca57acb1e7236" style="width: 100.0%; height: 100.0%;">Air Temp: 9 °C, Humidity: 42.8, knots: 9.3, MaxWindSpeed 13.0, precipitation  0.08G, GHI_w/m2: 82, date: 2024-10-25</div>`)[0];
+                popup_af761340011c5acb2409997c9faefbe2.setContent(html_c8d779c4d4694f5d3abca57acb1e7236);
+            
+        
+
+        marker_35ce5630958b08377b64ef0fc42d4473.bindPopup(popup_af761340011c5acb2409997c9faefbe2)
+        ;
+
+        
+    
+    
+            var marker_caf76f9231544a9d31a2c99787dfbdd2 = L.marker(
+                [-36.3096, 142.7722],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_1f90b448dd2571bd4b1e6d7877654f74 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_caf76f9231544a9d31a2c99787dfbdd2.setIcon(icon_1f90b448dd2571bd4b1e6d7877654f74);
+        
+    
+        var popup_ed4ddf4cfbb3b572f4aeccc5235a4d02 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_d81aae70b6c20a02503563ed365d2b83 = $(`<div id="html_d81aae70b6c20a02503563ed365d2b83" style="width: 100.0%; height: 100.0%;">Air Temp: 24 °C, Humidity: 56.8, knots: 5.7, MaxWindSpeed 9.9, precipitation  0.00I, GHI_w/m2: 194, date: 2024-10-26</div>`)[0];
+                popup_ed4ddf4cfbb3b572f4aeccc5235a4d02.setContent(html_d81aae70b6c20a02503563ed365d2b83);
+            
+        
+
+        marker_caf76f9231544a9d31a2c99787dfbdd2.bindPopup(popup_ed4ddf4cfbb3b572f4aeccc5235a4d02)
+        ;
+
+        
+    
+    
+            var marker_30f533f141aca9d3a3c0a88f24ac7ee5 = L.marker(
+                [-36.943, 143.286],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_d2fc1ee79c0881f5196475a196717d81 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_30f533f141aca9d3a3c0a88f24ac7ee5.setIcon(icon_d2fc1ee79c0881f5196475a196717d81);
+        
+    
+        var popup_6b37c9e3993193579e90340a3b193197 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_7cd8ef2feeae90bd9cb84e0f90533650 = $(`<div id="html_7cd8ef2feeae90bd9cb84e0f90533650" style="width: 100.0%; height: 100.0%;">Air Temp: 24 °C, Humidity: 55.2, knots: 5.8, MaxWindSpeed 11.1, precipitation  0.00I, GHI_w/m2: 197, date: 2024-10-27</div>`)[0];
+                popup_6b37c9e3993193579e90340a3b193197.setContent(html_7cd8ef2feeae90bd9cb84e0f90533650);
+            
+        
+
+        marker_30f533f141aca9d3a3c0a88f24ac7ee5.bindPopup(popup_6b37c9e3993193579e90340a3b193197)
+        ;
+
+        
+    
+    
+            var marker_175a324c52d516c74776588e000b057a = L.marker(
+                [-37.59, 149.31],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_9ee7cd71affb734117a433aa6f11acf0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_175a324c52d516c74776588e000b057a.setIcon(icon_9ee7cd71affb734117a433aa6f11acf0);
+        
+    
+        var popup_05d55fc2fdd88f4bd3133743b85726de = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_6c6534ca5101ebb9c22fb081f575c847 = $(`<div id="html_6c6534ca5101ebb9c22fb081f575c847" style="width: 100.0%; height: 100.0%;">Air Temp: 19 °C, Humidity: 57.2, knots: 8.9, MaxWindSpeed 15.0, precipitation  0.98G, GHI_w/m2: 153, date: 2024-10-28</div>`)[0];
+                popup_05d55fc2fdd88f4bd3133743b85726de.setContent(html_6c6534ca5101ebb9c22fb081f575c847);
+            
+        
+
+        marker_175a324c52d516c74776588e000b057a.bindPopup(popup_05d55fc2fdd88f4bd3133743b85726de)
+        ;
+
+        
+    
+    
+            var marker_f33ad7e75f7f6f21c3327f01b307596f = L.marker(
+                [-37.559, 148.037],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_52b7af43b289cef18c833a12aebaed21 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f33ad7e75f7f6f21c3327f01b307596f.setIcon(icon_52b7af43b289cef18c833a12aebaed21);
+        
+    
+        var popup_2e1b5d0ff836aee12406701b9914f77d = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_06a8d36b916b88ba54f765088db56291 = $(`<div id="html_06a8d36b916b88ba54f765088db56291" style="width: 100.0%; height: 100.0%;">Air Temp: 9 °C, Humidity: 41.1, knots: 12.7, MaxWindSpeed 19.0, precipitation  0.24G, GHI_w/m2: 83, date: 2024-10-29</div>`)[0];
+                popup_2e1b5d0ff836aee12406701b9914f77d.setContent(html_06a8d36b916b88ba54f765088db56291);
+            
+        
+
+        marker_f33ad7e75f7f6f21c3327f01b307596f.bindPopup(popup_2e1b5d0ff836aee12406701b9914f77d)
+        ;
+
+        
+    
+    
+            var marker_615b2a99a1fda3ea4054baff54be250c = L.marker(
+                [-36.3823, 141.3146],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_ac03bacfab0abd099ed051e4230b22d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_615b2a99a1fda3ea4054baff54be250c.setIcon(icon_ac03bacfab0abd099ed051e4230b22d0);
+        
+    
+        var popup_4f699023924c6156658fda7c77398747 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_7601cade9f7a670fdc1cfdcb04cbd51a = $(`<div id="html_7601cade9f7a670fdc1cfdcb04cbd51a" style="width: 100.0%; height: 100.0%;">Air Temp: 10 °C, Humidity: 43.7, knots: 9.5, MaxWindSpeed 13.0, precipitation  0.08G, GHI_w/m2: 90, date: 2024-10-30</div>`)[0];
+                popup_4f699023924c6156658fda7c77398747.setContent(html_7601cade9f7a670fdc1cfdcb04cbd51a);
+            
+        
+
+        marker_615b2a99a1fda3ea4054baff54be250c.bindPopup(popup_4f699023924c6156658fda7c77398747)
+        ;
+
+        
+    
+    
+            var marker_c1c12dc65410306224e8412a4ecdb941 = L.marker(
+                [-37.6593, 143.3445],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_5b92f2c22407c597a2b089a45e860ba0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c1c12dc65410306224e8412a4ecdb941.setIcon(icon_5b92f2c22407c597a2b089a45e860ba0);
+        
+    
+        var popup_767588d1e287a7b2d83d503a9dab1040 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_c3edf4199b5da46978f7d9ba0da00b55 = $(`<div id="html_c3edf4199b5da46978f7d9ba0da00b55" style="width: 100.0%; height: 100.0%;">Air Temp: 9 °C, Humidity: 40.1, knots: 12.1, MaxWindSpeed 15.0, precipitation  0.08G, GHI_w/m2: 84, date: 2024-10-31</div>`)[0];
+                popup_767588d1e287a7b2d83d503a9dab1040.setContent(html_c3edf4199b5da46978f7d9ba0da00b55);
+            
+        
+
+        marker_c1c12dc65410306224e8412a4ecdb941.bindPopup(popup_767588d1e287a7b2d83d503a9dab1040)
+        ;
+
+        
+    
+    
+            var marker_eaa0bf33143df3669408cc0e81c39019 = L.marker(
+                [-37.856, 143.416],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_186c3eb0ad50b82c8a6b7b287a141d89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eaa0bf33143df3669408cc0e81c39019.setIcon(icon_186c3eb0ad50b82c8a6b7b287a141d89);
+        
+    
+        var popup_ed36e02655be04a32e01ca92115768de = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_499cda7aa18e6b5e6c2d3a8d387bc19e = $(`<div id="html_499cda7aa18e6b5e6c2d3a8d387bc19e" style="width: 100.0%; height: 100.0%;">Air Temp: 14 °C, Humidity: 51.0, knots: 9.1, MaxWindSpeed 12.0, precipitation  0.00G, GHI_w/m2: 119, date: 2024-11-01</div>`)[0];
+                popup_ed36e02655be04a32e01ca92115768de.setContent(html_499cda7aa18e6b5e6c2d3a8d387bc19e);
+            
+        
+
+        marker_eaa0bf33143df3669408cc0e81c39019.bindPopup(popup_ed36e02655be04a32e01ca92115768de)
+        ;
+
+        
+    
+    
+            var marker_dd07038c507b532b302e0ca3e6ac3f4d = L.marker(
+                [-37.61, 149.296],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_abff0dfe8166553294a615e45f3dc3b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dd07038c507b532b302e0ca3e6ac3f4d.setIcon(icon_abff0dfe8166553294a615e45f3dc3b4);
+        
+    
+        var popup_4c2a1ae0903914d233534750bf6fcdcd = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_c4235c1363d350f353bd94923b2d90dd = $(`<div id="html_c4235c1363d350f353bd94923b2d90dd" style="width: 100.0%; height: 100.0%;">Air Temp: 16 °C, Humidity: 48.3, knots: 14.4, MaxWindSpeed 19.0, precipitation  0.00G, GHI_w/m2: 139, date: 2024-11-02</div>`)[0];
+                popup_4c2a1ae0903914d233534750bf6fcdcd.setContent(html_c4235c1363d350f353bd94923b2d90dd);
+            
+        
+
+        marker_dd07038c507b532b302e0ca3e6ac3f4d.bindPopup(popup_4c2a1ae0903914d233534750bf6fcdcd)
+        ;
+
+        
+    
+    
+            var marker_e2ce5339c79c6a2a0320a6a30e9e0ce4 = L.marker(
+                [-36.4422, 141.427],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_d5759746f8ea308c0abaf9fd73e5a858 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e2ce5339c79c6a2a0320a6a30e9e0ce4.setIcon(icon_d5759746f8ea308c0abaf9fd73e5a858);
+        
+    
+        var popup_0a086390961ab4c897c449a0fe899e23 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_0b88fa69f0acbca8c51b39765e50965f = $(`<div id="html_0b88fa69f0acbca8c51b39765e50965f" style="width: 100.0%; height: 100.0%;">Air Temp: 15 °C, Humidity: 48.1, knots: 7.9, MaxWindSpeed 12.0, precipitation  0.00G, GHI_w/m2: 131, date: 2024-11-03</div>`)[0];
+                popup_0a086390961ab4c897c449a0fe899e23.setContent(html_0b88fa69f0acbca8c51b39765e50965f);
+            
+        
+
+        marker_e2ce5339c79c6a2a0320a6a30e9e0ce4.bindPopup(popup_0a086390961ab4c897c449a0fe899e23)
+        ;
+
+        
+    
+    
+            var marker_52d6059565a5d08cabad9f5508831d8e = L.marker(
+                [-36.2669, 143.1906],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_db3cd11fdcaa296172e198f9fd622f3e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_52d6059565a5d08cabad9f5508831d8e.setIcon(icon_db3cd11fdcaa296172e198f9fd622f3e);
+        
+    
+        var popup_3943b470278fe7f5e5566dc4b065006e = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_a77f53be3d665893bce35fafe5d5022a = $(`<div id="html_a77f53be3d665893bce35fafe5d5022a" style="width: 100.0%; height: 100.0%;">Air Temp: 12 °C, Humidity: 42.7, knots: 10.0, MaxWindSpeed 15.9, precipitation  0.01G, GHI_w/m2: 109, date: 2024-11-04</div>`)[0];
+                popup_3943b470278fe7f5e5566dc4b065006e.setContent(html_a77f53be3d665893bce35fafe5d5022a);
+            
+        
+
+        marker_52d6059565a5d08cabad9f5508831d8e.bindPopup(popup_3943b470278fe7f5e5566dc4b065006e)
+        ;
+
+        
+    
+    
+            var marker_2965ce3d8c3a7ff5100286a14b1e6f94 = L.marker(
+                [-37.448, 148.114],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_21e65e6481ec04b1e610c33b903e63ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2965ce3d8c3a7ff5100286a14b1e6f94.setIcon(icon_21e65e6481ec04b1e610c33b903e63ba);
+        
+    
+        var popup_647d5ecc72f5e31f0893660422ed3ad8 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_73accfb56a25f54326b51af31da9e561 = $(`<div id="html_73accfb56a25f54326b51af31da9e561" style="width: 100.0%; height: 100.0%;">Air Temp: 10 °C, Humidity: 44.4, knots: 5.6, MaxWindSpeed 11.1, precipitation  0.12G, GHI_w/m2: 90, date: 2024-11-05</div>`)[0];
+                popup_647d5ecc72f5e31f0893660422ed3ad8.setContent(html_73accfb56a25f54326b51af31da9e561);
+            
+        
+
+        marker_2965ce3d8c3a7ff5100286a14b1e6f94.bindPopup(popup_647d5ecc72f5e31f0893660422ed3ad8)
+        ;
+
+        
+    
+    
+            var marker_b94161106df4650c652ff4be916838a7 = L.marker(
+                [-37.247, 141.278],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_5839b5efdac466e7b0022c0f24ce0235 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b94161106df4650c652ff4be916838a7.setIcon(icon_5839b5efdac466e7b0022c0f24ce0235);
+        
+    
+        var popup_6b00f989be387c4ff80e71f5e59b98c5 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_53527b1d8dcf9a144c644c2c05fc0706 = $(`<div id="html_53527b1d8dcf9a144c644c2c05fc0706" style="width: 100.0%; height: 100.0%;">Air Temp: 14 °C, Humidity: 47.4, knots: 7.1, MaxWindSpeed 14.0, precipitation  0.00I, GHI_w/m2: 123, date: 2024-11-06</div>`)[0];
+                popup_6b00f989be387c4ff80e71f5e59b98c5.setContent(html_53527b1d8dcf9a144c644c2c05fc0706);
+            
+        
+
+        marker_b94161106df4650c652ff4be916838a7.bindPopup(popup_6b00f989be387c4ff80e71f5e59b98c5)
+        ;
+
+        
+    
+    
+            var marker_dd00baf8423cd5b8f495b57d63d7995f = L.marker(
+                [-36.851, 148.117],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_64f8282a9e4022f15498c59ea95b500f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dd00baf8423cd5b8f495b57d63d7995f.setIcon(icon_64f8282a9e4022f15498c59ea95b500f);
+        
+    
+        var popup_8ee8e77e318875f8a13bc302ce42615c = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_8f11214c2ec049fc405f6cce6fe65149 = $(`<div id="html_8f11214c2ec049fc405f6cce6fe65149" style="width: 100.0%; height: 100.0%;">Air Temp: 9 °C, Humidity: 45.3, knots: 2.5, MaxWindSpeed 6.0, precipitation  0.00G, GHI_w/m2: 80, date: 2024-11-07</div>`)[0];
+                popup_8ee8e77e318875f8a13bc302ce42615c.setContent(html_8f11214c2ec049fc405f6cce6fe65149);
+            
+        
+
+        marker_dd00baf8423cd5b8f495b57d63d7995f.bindPopup(popup_8ee8e77e318875f8a13bc302ce42615c)
+        ;
+
+        
+    
+    
+            var marker_f74b75adc081c3ea29b7b93aa9cc51f2 = L.marker(
+                [-37.634, 149.237],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_6eeda5eb4e640022f0a379ea0f4fb2e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f74b75adc081c3ea29b7b93aa9cc51f2.setIcon(icon_6eeda5eb4e640022f0a379ea0f4fb2e1);
+        
+    
+        var popup_c49b087399cd4b79309ddfaeefa3966e = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_3f7d8a7ba80bf02f34cdb313a8eec69e = $(`<div id="html_3f7d8a7ba80bf02f34cdb313a8eec69e" style="width: 100.0%; height: 100.0%;">Air Temp: 16 °C, Humidity: 48.4, knots: 8.1, MaxWindSpeed 15.9, precipitation  0.00G, GHI_w/m2: 139, date: 2024-11-08</div>`)[0];
+                popup_c49b087399cd4b79309ddfaeefa3966e.setContent(html_3f7d8a7ba80bf02f34cdb313a8eec69e);
+            
+        
+
+        marker_f74b75adc081c3ea29b7b93aa9cc51f2.bindPopup(popup_c49b087399cd4b79309ddfaeefa3966e)
+        ;
+
+        
+    
+    
+            var marker_8470d9d4c2af9a63750b12b3bff16ead = L.marker(
+                [-37.013, 141.5355],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_8da46a0b81fc20940647c91140011c02 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8470d9d4c2af9a63750b12b3bff16ead.setIcon(icon_8da46a0b81fc20940647c91140011c02);
+        
+    
+        var popup_89be499b91807dc12757b1152645170e = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_bcb86d34052a7595b3845faba17098ab = $(`<div id="html_bcb86d34052a7595b3845faba17098ab" style="width: 100.0%; height: 100.0%;">Air Temp: 10 °C, Humidity: 44.1, knots: 7.3, MaxWindSpeed 12.0, precipitation  0.39G, GHI_w/m2: 90, date: 2024-11-09</div>`)[0];
+                popup_89be499b91807dc12757b1152645170e.setContent(html_bcb86d34052a7595b3845faba17098ab);
+            
+        
+
+        marker_8470d9d4c2af9a63750b12b3bff16ead.bindPopup(popup_89be499b91807dc12757b1152645170e)
+        ;
+
+        
+    
+    
+            var marker_c0020f70d94160ce010d26d30b924d34 = L.marker(
+                [-36.3674, 143.7295],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_956df406e3642c77aa0e46fdae2076b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c0020f70d94160ce010d26d30b924d34.setIcon(icon_956df406e3642c77aa0e46fdae2076b3);
+        
+    
+        var popup_5d96fce72cf5757cc7b906e1ff9812f7 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_8d848fe6301d2a5eb72c1473cd9cf429 = $(`<div id="html_8d848fe6301d2a5eb72c1473cd9cf429" style="width: 100.0%; height: 100.0%;">Air Temp: 15 °C, Humidity: 48.7, knots: 8.5, MaxWindSpeed 20.0, precipitation  0.01G, GHI_w/m2: 130, date: 2024-11-10</div>`)[0];
+                popup_5d96fce72cf5757cc7b906e1ff9812f7.setContent(html_8d848fe6301d2a5eb72c1473cd9cf429);
+            
+        
+
+        marker_c0020f70d94160ce010d26d30b924d34.bindPopup(popup_5d96fce72cf5757cc7b906e1ff9812f7)
+        ;
+
+        
+    
+    
+            var marker_fbef062508f2fab80ae4f07450314ad5 = L.marker(
+                [-37.6662, 142.9874],
+                {}
+            ).addTo(map_6e6f793cf2bde1d796fb1ea9a0a5108d);
+        
+    
+            var icon_f033c2186f6be878b825a0c96139b002 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fbef062508f2fab80ae4f07450314ad5.setIcon(icon_f033c2186f6be878b825a0c96139b002);
+        
+    
+        var popup_2207287533a399d31b72c1b19dcfdadc = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_99a4fbfe971db6fa9db3ffe4169b1039 = $(`<div id="html_99a4fbfe971db6fa9db3ffe4169b1039" style="width: 100.0%; height: 100.0%;">Air Temp: 24 °C, Humidity: 51.9, knots: 7.3, MaxWindSpeed 13.0, precipitation  0.00I, GHI_w/m2: 202, date: 2024-11-11</div>`)[0];
+                popup_2207287533a399d31b72c1b19dcfdadc.setContent(html_99a4fbfe971db6fa9db3ffe4169b1039);
+            
+        
+
+        marker_fbef062508f2fab80ae4f07450314ad5.bindPopup(popup_2207287533a399d31b72c1b19dcfdadc)
+        ;
+
+        
+    
+</script>
+</html>
